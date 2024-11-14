@@ -1,0 +1,3249 @@
+{
+    "nodes": [
+        {
+            "id": 442242,
+            "name": "Oscar Piastri",
+            "tag_timeline": "https://newsadoo.com/de/tag/442242/timeline",
+            "tag_type": "PER",
+            "val": 1983,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Oscar_Piastri.png/100px-Oscar_Piastri.png"
+        },
+        {
+            "id": 78503,
+            "name": "Lando Norris",
+            "tag_timeline": "https://newsadoo.com/de/tag/78503/timeline",
+            "tag_type": "PER",
+            "val": 2960,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg/100px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg"
+        },
+        {
+            "id": 55215,
+            "name": "Charles Leclerc",
+            "tag_timeline": "https://newsadoo.com/de/tag/55215/timeline",
+            "tag_type": "PER",
+            "val": 1906,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3978_by_Stepro_%28cropped2%29.jpg/100px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3978_by_Stepro_%28cropped2%29.jpg"
+        },
+        {
+            "id": 56879,
+            "name": "McLaren Racing",
+            "tag_timeline": "https://newsadoo.com/de/tag/56879/timeline",
+            "tag_type": "ORG",
+            "val": 3242,
+            "level": 0,
+            "image": "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png"
+        },
+        {
+            "id": 66643,
+            "name": "Max Verstappen",
+            "tag_timeline": "https://newsadoo.com/de/tag/66643/timeline",
+            "tag_type": "PER",
+            "val": 3115,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28cropped%29.jpg/100px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28cropped%29.jpg"
+        },
+        {
+            "id": 82898,
+            "name": "George Russell (Rennfahrer)",
+            "tag_timeline": "https://newsadoo.com/de/tag/82898/timeline",
+            "tag_type": "PER",
+            "val": 1497,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/George_Russell%2C_British_GP_2022_%2852381430692%29_%28cropped%29_%28cropped%29.jpg/100px-George_Russell%2C_British_GP_2022_%2852381430692%29_%28cropped%29_%28cropped%29.jpg"
+        },
+        {
+            "id": 74332,
+            "name": "Sergio Pérez",
+            "tag_timeline": "https://newsadoo.com/de/tag/74332/timeline",
+            "tag_type": "PER",
+            "val": 1473,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/2019_Formula_One_tests_Barcelona%2C_P%C3%A9rez_%2847200017422%29.jpg/100px-2019_Formula_One_tests_Barcelona%2C_P%C3%A9rez_%2847200017422%29.jpg"
+        },
+        {
+            "id": 78438,
+            "name": "Carlos Sainz senior",
+            "tag_timeline": "https://newsadoo.com/de/tag/78438/timeline",
+            "tag_type": "PER",
+            "val": 1654,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Carlos_Sainz_Dakar_2009.jpg/100px-Carlos_Sainz_Dakar_2009.jpg"
+        },
+        {
+            "id": 273171,
+            "name": "Red Bull Racing",
+            "tag_timeline": "https://newsadoo.com/de/tag/273171/timeline",
+            "tag_type": "ORG",
+            "val": 3927,
+            "level": 0,
+            "image": "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png"
+        },
+        {
+            "id": 69680,
+            "name": "Nico Hülkenberg",
+            "tag_timeline": "https://newsadoo.com/de/tag/69680/timeline",
+            "tag_type": "PER",
+            "val": 1971,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg/100px-2019_Formula_One_tests_Barcelona%2C_Hulkenberg_%2840287128313%29.jpg"
+        },
+        {
+            "id": 55216,
+            "name": "Scuderia Ferrari",
+            "tag_timeline": "https://newsadoo.com/de/tag/55216/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 2905,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/de/thumb/c/c0/Scuderia_Ferrari_Logo.svg/100px-Scuderia_Ferrari_Logo.svg.png"
+        },
+        {
+            "id": 300162,
+            "name": "Circuit Zandvoort",
+            "tag_timeline": "https://newsadoo.com/de/tag/300162/timeline",
+            "tag_type": "LOC",
+            "val": 1536,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Circuit_Zandvoort_Logo.jpg/100px-Circuit_Zandvoort_Logo.jpg"
+        },
+        {
+            "id": 326594,
+            "name": "Saison",
+            "tag_timeline": "https://newsadoo.com/de/tag/326594/timeline",
+            "tag_type": "EVENT",
+            "val": 2875,
+            "level": 0,
+            "image": "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png"
+        },
+        {
+            "id": 55056,
+            "name": "Formel 1",
+            "tag_timeline": "https://newsadoo.com/de/tag/55056/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 4614,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/2015_Malaysian_GP_opening_lap.jpg/100px-2015_Malaysian_GP_opening_lap.jpg"
+        },
+        {
+            "id": 362788,
+            "name": "Autodromo Nazionale di Monza",
+            "tag_timeline": "https://newsadoo.com/de/tag/362788/timeline",
+            "tag_type": "LOC",
+            "val": 2043,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/de/thumb/f/f2/Logo_Monza.svg/100px-Logo_Monza.svg.png"
+        },
+        {
+            "id": 273504,
+            "name": "Mercedes AMG F1 Team",
+            "tag_timeline": "https://newsadoo.com/de/tag/273504/timeline",
+            "tag_type": "ORG",
+            "val": 2257,
+            "level": 0,
+            "image": "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png"
+        },
+        {
+            "id": 56512,
+            "name": "Lewis Hamilton",
+            "tag_timeline": "https://newsadoo.com/de/tag/56512/timeline",
+            "tag_type": "PER",
+            "val": 2283,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg/100px-Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg"
+        },
+        {
+            "id": 328102,
+            "name": "Baku",
+            "tag_timeline": "https://newsadoo.com/de/tag/328102/timeline",
+            "tag_type": "LOC",
+            "val": 1559,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Baku_City_in_Azerbaijan_%282020%E2%80%932023%29.svg/100px-Baku_City_in_Azerbaijan_%282020%E2%80%932023%29.svg.png"
+        },
+        {
+            "id": 308236,
+            "name": "Aserbaidschan",
+            "tag_timeline": "https://newsadoo.com/de/tag/308236/timeline",
+            "tag_type": "LOC",
+            "val": 1049,
+            "level": 1,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Azerbaijan.svg/100px-Flag_of_Azerbaijan.svg.png"
+        },
+        {
+            "id": 80436,
+            "name": "Haas F1 Team",
+            "tag_timeline": "https://newsadoo.com/de/tag/80436/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 1796,
+            "level": 0,
+            "image": "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png"
+        },
+        {
+            "id": 97754,
+            "name": "Kevin Magnussen",
+            "tag_timeline": "https://newsadoo.com/de/tag/97754/timeline",
+            "tag_type": "PER",
+            "val": 678,
+            "level": 1,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kevin_Magnussen%2C_2019_Formula_One_Tests_Barcelona_%28cropped%29.jpg/100px-Kevin_Magnussen%2C_2019_Formula_One_Tests_Barcelona_%28cropped%29.jpg"
+        },
+        {
+            "id": 73319,
+            "name": "Esteban Ocon",
+            "tag_timeline": "https://newsadoo.com/de/tag/73319/timeline",
+            "tag_type": "PER",
+            "val": 610,
+            "level": 1,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Esteban_Ocon_2017_Malaysia_2.jpg/100px-Esteban_Ocon_2017_Malaysia_2.jpg"
+        },
+        {
+            "id": 76447155,
+            "name": "Oliver Bearman",
+            "tag_timeline": "https://newsadoo.com/de/tag/76447155/timeline",
+            "tag_type": "PER",
+            "val": 546,
+            "level": 1,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Ollie_Bearman_Austria_2022.jpg/100px-Ollie_Bearman_Austria_2022.jpg"
+        },
+        {
+            "id": 272615,
+            "name": "Singapur",
+            "tag_timeline": "https://newsadoo.com/de/tag/272615/timeline",
+            "tag_type": "LOC",
+            "val": 1641,
+            "level": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/100px-Flag_of_Singapore.svg.png"
+        },
+        {
+            "id": 349707,
+            "name": "Marina Bay Street Circuit",
+            "tag_timeline": "https://newsadoo.com/de/tag/349707/timeline",
+            "tag_type": "LOC",
+            "val": 340,
+            "level": 1,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Marina_Bay_Street_Circuit%2C_May_8%2C_2018_SkySat_%28cropped%29.jpg/100px-Marina_Bay_Street_Circuit%2C_May_8%2C_2018_SkySat_%28cropped%29.jpg"
+        },
+        {
+            "id": 70175,
+            "name": "Daniel Ricciardo",
+            "tag_timeline": "https://newsadoo.com/de/tag/70175/timeline",
+            "tag_type": "PER",
+            "val": 1038,
+            "level": 1,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Daniel_Ricciardo_January_2024.jpg/100px-Daniel_Ricciardo_January_2024.jpg"
+        },
+        {
+            "id": 74020,
+            "name": "Racing Bulls",
+            "tag_timeline": "https://newsadoo.com/de/tag/74020/timeline",
+            "tag_type": "ORG",
+            "val": 945,
+            "level": 1,
+            "image": "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png"
+        },
+        {
+            "id": 272641,
+            "name": "Südostasien",
+            "tag_timeline": "https://newsadoo.com/de/tag/272641/timeline",
+            "tag_type": "LOC",
+            "val": 159,
+            "level": 1,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Southeast_Asia_%28orthographic_projection%29.svg/100px-Southeast_Asia_%28orthographic_projection%29.svg.png"
+        },
+        {
+            "id": 223818,
+            "name": "Lichtermeer",
+            "tag_timeline": "https://newsadoo.com/de/tag/223818/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 41,
+            "level": 2,
+            "image": "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png"
+        },
+        {
+            "id": 68557,
+            "name": "Kylie Minogue",
+            "tag_timeline": "https://newsadoo.com/de/tag/68557/timeline",
+            "tag_type": "PER",
+            "val": 33,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kylie_Minogue_1_%284515615%29.jpg/100px-Kylie_Minogue_1_%284515615%29.jpg"
+        },
+        {
+            "id": 101615,
+            "name": "Flagge",
+            "tag_timeline": "https://newsadoo.com/de/tag/101615/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 341,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Monument_dedicated_to_the_victims_of_1985_Tchaivatcha_Tragedy_08.jpg/100px-Monument_dedicated_to_the_victims_of_1985_Tchaivatcha_Tragedy_08.jpg"
+        },
+        {
+            "id": 84182,
+            "name": "Nico Rosberg",
+            "tag_timeline": "https://newsadoo.com/de/tag/84182/timeline",
+            "tag_type": "PER",
+            "val": 266,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Nico_Rosberg-008_%2822964167435%29.jpg/100px-Nico_Rosberg-008_%2822964167435%29.jpg"
+        },
+        {
+            "id": 92096,
+            "name": "Asphalt",
+            "tag_timeline": "https://newsadoo.com/de/tag/92096/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 237,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Asphaltbelag.jpg/100px-Asphaltbelag.jpg"
+        },
+        {
+            "id": 299134,
+            "name": "Abu Dhabi",
+            "tag_timeline": "https://newsadoo.com/de/tag/299134/timeline",
+            "tag_type": "LOC",
+            "val": 326,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Abu_Dhabi._27_January_2019._European_Space_Agency._Copernicus._Sentinel-2.jpg/100px-Abu_Dhabi._27_January_2019._European_Space_Agency._Copernicus._Sentinel-2.jpg"
+        },
+        {
+            "id": 84525,
+            "name": "Sekunde",
+            "tag_timeline": "https://newsadoo.com/de/tag/84525/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 354,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Montinari_Milano.jpg/100px-Montinari_Milano.jpg"
+        },
+        {
+            "id": 207627,
+            "name": "Mauer",
+            "tag_timeline": "https://newsadoo.com/de/tag/207627/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 170,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mauer_aus_Naturstein_-_Gartenmauer_1.jpg/100px-Mauer_aus_Naturstein_-_Gartenmauer_1.jpg"
+        },
+        {
+            "id": 69162,
+            "name": "David Coulthard",
+            "tag_timeline": "https://newsadoo.com/de/tag/69162/timeline",
+            "tag_type": "PER",
+            "val": 68,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2016209185742_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0205_-_DV3P4798_mod.jpg/100px-2016209185742_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0205_-_DV3P4798_mod.jpg"
+        },
+        {
+            "id": 74021,
+            "name": "Pierre Gasly",
+            "tag_timeline": "https://newsadoo.com/de/tag/74021/timeline",
+            "tag_type": "PER",
+            "val": 708,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2022_French_Grand_Prix_%2852279065728%29_%28cropped%29.png/100px-2022_French_Grand_Prix_%2852279065728%29_%28cropped%29.png"
+        },
+        {
+            "id": 73318,
+            "name": "Lance Stroll",
+            "tag_timeline": "https://newsadoo.com/de/tag/73318/timeline",
+            "tag_type": "PER",
+            "val": 439,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/2019_Formula_One_tests_Barcelona%2C_Stroll_%2833376133178%29.jpg/100px-2019_Formula_One_tests_Barcelona%2C_Stroll_%2833376133178%29.jpg"
+        },
+        {
+            "id": 74019,
+            "name": "Alexander Albon",
+            "tag_timeline": "https://newsadoo.com/de/tag/74019/timeline",
+            "tag_type": "PER",
+            "val": 666,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alex_Albon_%28cropped%29.jpg/100px-Alex_Albon_%28cropped%29.jpg"
+        },
+        {
+            "id": 180459,
+            "name": "Yuki Tsunoda",
+            "tag_timeline": "https://newsadoo.com/de/tag/180459/timeline",
+            "tag_type": "PER",
+            "val": 688,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/2021_US_GP%2C_Tsunoda.jpg/100px-2021_US_GP%2C_Tsunoda.jpg"
+        },
+        {
+            "id": 82897,
+            "name": "Zhou Guanyu",
+            "tag_timeline": "https://newsadoo.com/de/tag/82897/timeline",
+            "tag_type": "PER",
+            "val": 571,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Zhou_Guanyu_at_the_2022_Austrian_Grand_Prix.jpg/100px-Zhou_Guanyu_at_the_2022_Austrian_Grand_Prix.jpg"
+        },
+        {
+            "id": 64792,
+            "name": "Valtteri Bottas",
+            "tag_timeline": "https://newsadoo.com/de/tag/64792/timeline",
+            "tag_type": "PER",
+            "val": 851,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Valtteri_Bottas_at_the_2022_Austrian_Grand_Prix.jpg/100px-Valtteri_Bottas_at_the_2022_Austrian_Grand_Prix.jpg"
+        },
+        {
+            "id": 156133,
+            "name": "Liam Lawson",
+            "tag_timeline": "https://newsadoo.com/de/tag/156133/timeline",
+            "tag_type": "PER",
+            "val": 417,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Liam_Lawson_Austria_2022.jpg/100px-Liam_Lawson_Austria_2022.jpg"
+        },
+        {
+            "id": 69063,
+            "name": "Fernando Alonso",
+            "tag_timeline": "https://newsadoo.com/de/tag/69063/timeline",
+            "tag_type": "PER",
+            "val": 936,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/100px-Alonso-68_%2824710447098%29.jpg"
+        },
+        {
+            "id": 68654,
+            "name": "Aston Martin",
+            "tag_timeline": "https://newsadoo.com/de/tag/68654/timeline",
+            "tag_type": "ORG",
+            "val": 1004,
+            "level": 2,
+            "image": "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png"
+        },
+        {
+            "id": 781211,
+            "name": "Alpine F1 Team",
+            "tag_timeline": "https://newsadoo.com/de/tag/781211/timeline",
+            "tag_type": "UNKNOWN",
+            "val": 1035,
+            "level": 2,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Alpine_F1_Team_Logo.svg/100px-Alpine_F1_Team_Logo.svg.png"
+        }
+    ],
+    "links": [
+        {
+            "source": 442242,
+            "target": 78503,
+            "weight": 0.7491510917168515,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 55215,
+            "weight": 0.7139481307425629,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 56879,
+            "weight": 0.6819101124686274,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 66643,
+            "weight": 0.6654954991455051,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 82898,
+            "weight": 0.6070988738310937,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 74332,
+            "weight": 0.5938863065728994,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 78438,
+            "weight": 0.5825367786969698,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 273171,
+            "weight": 0.581244748550307,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 69680,
+            "weight": 0.5665175305950222,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 55216,
+            "weight": 0.5649698396547458,
+            "root": 442242
+        },
+        {
+            "source": 300162,
+            "target": 78503,
+            "weight": 0.4206791421822928,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 273171,
+            "weight": 0.4002464230256274,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 66643,
+            "weight": 0.3977357412952623,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 56879,
+            "weight": 0.39658945054174016,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 326594,
+            "weight": 0.3830728281497745,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 55056,
+            "weight": 0.37375643424205507,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 362788,
+            "weight": 0.3505595550715775,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 69680,
+            "weight": 0.3442610606061239,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 273504,
+            "weight": 0.34319382948533605,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 55216,
+            "weight": 0.3403770062484738,
+            "root": 300162
+        },
+        {
+            "source": 55056,
+            "target": 273171,
+            "weight": 0.634769569810245,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 56879,
+            "weight": 0.6132949439469111,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 66643,
+            "weight": 0.5665868053070372,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 326594,
+            "weight": 0.5548921665715718,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 55216,
+            "weight": 0.5402744424180366,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 78503,
+            "weight": 0.539831533174051,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 362788,
+            "weight": 0.49312031760494596,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 56512,
+            "weight": 0.4769569763551948,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 273504,
+            "weight": 0.47411845028522487,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 442242,
+            "weight": 0.45159647898364147,
+            "root": 55056
+        },
+        {
+            "source": 273171,
+            "target": 56879,
+            "weight": 0.7513803929547749,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 66643,
+            "weight": 0.704214455601151,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 78503,
+            "weight": 0.6968994634374821,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 55056,
+            "weight": 0.634769569810245,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 442242,
+            "weight": 0.581244748550307,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 55216,
+            "weight": 0.5696414046909933,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 55215,
+            "weight": 0.5632623722566009,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 74332,
+            "weight": 0.5384407795645298,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 273504,
+            "weight": 0.5021632917197419,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 69680,
+            "weight": 0.4575669426181941,
+            "root": 273171
+        },
+        {
+            "source": 362788,
+            "target": 55216,
+            "weight": 0.5217209769830169,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 55056,
+            "weight": 0.49312031760494596,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 55215,
+            "weight": 0.46166052966760396,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 56879,
+            "weight": 0.44645669515326747,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 78503,
+            "weight": 0.440807772287251,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 442242,
+            "weight": 0.4347228943723544,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 273504,
+            "weight": 0.4344918963492244,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 273171,
+            "weight": 0.41730428346162163,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 82898,
+            "weight": 0.4139934621321237,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 66643,
+            "weight": 0.4090877628028331,
+            "root": 362788
+        },
+        {
+            "source": 328102,
+            "target": 308236,
+            "weight": 0.6599813221524813,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 74332,
+            "weight": 0.47248561554650886,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 55215,
+            "weight": 0.4652537288496185,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 78503,
+            "weight": 0.45247787877261536,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 442242,
+            "weight": 0.4385003691927935,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 66643,
+            "weight": 0.4315473298885239,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 56879,
+            "weight": 0.42034147674104616,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 55216,
+            "weight": 0.40599213139535273,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 55056,
+            "weight": 0.3941060797313082,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 273171,
+            "weight": 0.39324148914431345,
+            "root": 328102
+        },
+        {
+            "source": 78503,
+            "target": 66643,
+            "weight": 0.810798931268085,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 56879,
+            "weight": 0.7782960916916076,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 442242,
+            "weight": 0.7491510917168515,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 273171,
+            "weight": 0.6968994634374821,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 55215,
+            "weight": 0.6837206884035321,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 74332,
+            "weight": 0.5665490500344468,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 55216,
+            "weight": 0.5452925193979847,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 78438,
+            "weight": 0.5405272229478101,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 55056,
+            "weight": 0.539831533174051,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 69680,
+            "weight": 0.5262067113712379,
+            "root": 78503
+        },
+        {
+            "source": 56879,
+            "target": 78503,
+            "weight": 0.7782960916916076,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 273171,
+            "weight": 0.7513803929547749,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 66643,
+            "weight": 0.6881977561529783,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 442242,
+            "weight": 0.6819101124686274,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 55215,
+            "weight": 0.6195163426662793,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 55056,
+            "weight": 0.6132949439469111,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 55216,
+            "weight": 0.5995677289369805,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 74332,
+            "weight": 0.5381451654711552,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 273504,
+            "weight": 0.4953732071717254,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 78438,
+            "weight": 0.46725397309656375,
+            "root": 56879
+        },
+        {
+            "source": 55216,
+            "target": 55215,
+            "weight": 0.6621142530026344,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 273504,
+            "weight": 0.6154848470219533,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 56879,
+            "weight": 0.5995677289369805,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 78438,
+            "weight": 0.5889594862876645,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 56512,
+            "weight": 0.5809056083901207,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 82898,
+            "weight": 0.571600087854298,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 273171,
+            "weight": 0.5696414046909933,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 69680,
+            "weight": 0.5683587204656414,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 442242,
+            "weight": 0.5649698396547458,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 78503,
+            "weight": 0.5452925193979847,
+            "root": 55216
+        },
+        {
+            "source": 69680,
+            "target": 80436,
+            "weight": 0.8100064715652499,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 78438,
+            "weight": 0.5942766372615772,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 55215,
+            "weight": 0.5747519197501895,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 55216,
+            "weight": 0.5683587204656414,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 442242,
+            "weight": 0.5665175305950222,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 82898,
+            "weight": 0.5466525520544552,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 78503,
+            "weight": 0.5262067113712379,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 66643,
+            "weight": 0.507297754600103,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 273504,
+            "weight": 0.502096123580913,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 56512,
+            "weight": 0.49168622409825424,
+            "root": 69680
+        },
+        {
+            "source": 55215,
+            "target": 442242,
+            "weight": 0.7139481307425629,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 78503,
+            "weight": 0.6837206884035321,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 55216,
+            "weight": 0.6621142530026344,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 78438,
+            "weight": 0.638680789983424,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 66643,
+            "weight": 0.6328399682356717,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 56879,
+            "weight": 0.6195163426662793,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 82898,
+            "weight": 0.6020722415680443,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 74332,
+            "weight": 0.5956178707370722,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 69680,
+            "weight": 0.5747519197501895,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 273171,
+            "weight": 0.5632623722566009,
+            "root": 55215
+        },
+        {
+            "source": 80436,
+            "target": 69680,
+            "weight": 0.8100064715652499,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 78438,
+            "weight": 0.5709185835777442,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 55216,
+            "weight": 0.5406805203260865,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 82898,
+            "weight": 0.5305852666556358,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 55215,
+            "weight": 0.522651089161175,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 442242,
+            "weight": 0.51929190475019,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 97754,
+            "weight": 0.513824780982935,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 273504,
+            "weight": 0.5086054515873644,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 73319,
+            "weight": 0.502536557587606,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 76447155,
+            "weight": 0.48371106924350254,
+            "root": 80436
+        },
+        {
+            "source": 56512,
+            "target": 273504,
+            "weight": 0.6022125186545574,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 55216,
+            "weight": 0.5809056083901207,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 82898,
+            "weight": 0.5668882126038156,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 66643,
+            "weight": 0.523859018451066,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 78503,
+            "weight": 0.5023939093113838,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 69680,
+            "weight": 0.49168622409825424,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 55056,
+            "weight": 0.4769569763551948,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 55215,
+            "weight": 0.47459241250569745,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 78438,
+            "weight": 0.4718985330773198,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 442242,
+            "weight": 0.4671669078075024,
+            "root": 56512
+        },
+        {
+            "source": 326594,
+            "target": 55056,
+            "weight": 0.5548921665715718,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 55216,
+            "weight": 0.42941754885592925,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 273171,
+            "weight": 0.4160617546289594,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 56879,
+            "weight": 0.40222859043267545,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 273504,
+            "weight": 0.3874649733647652,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 300162,
+            "weight": 0.3830728281497745,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 56512,
+            "weight": 0.3614424075699788,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 66643,
+            "weight": 0.3431804138158627,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 362788,
+            "weight": 0.340821465460759,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 69680,
+            "weight": 0.3339680278665692,
+            "root": 326594
+        },
+        {
+            "source": 82898,
+            "target": 273504,
+            "weight": 0.6408680353103392,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 442242,
+            "weight": 0.6070988738310937,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 55215,
+            "weight": 0.6020722415680443,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 78438,
+            "weight": 0.57704169614601,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 55216,
+            "weight": 0.571600087854298,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 56512,
+            "weight": 0.5668882126038156,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 69680,
+            "weight": 0.5466525520544552,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 74332,
+            "weight": 0.5427786646268977,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 66643,
+            "weight": 0.5320838815559211,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 80436,
+            "weight": 0.5305852666556358,
+            "root": 82898
+        },
+        {
+            "source": 66643,
+            "target": 78503,
+            "weight": 0.810798931268085,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 273171,
+            "weight": 0.704214455601151,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 56879,
+            "weight": 0.6881977561529783,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 442242,
+            "weight": 0.6654954991455051,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 55215,
+            "weight": 0.6328399682356717,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 74332,
+            "weight": 0.5807510202559054,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 55056,
+            "weight": 0.5665868053070372,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 55216,
+            "weight": 0.544517451923041,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 82898,
+            "weight": 0.5320838815559211,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 56512,
+            "weight": 0.523859018451066,
+            "root": 66643
+        },
+        {
+            "source": 74332,
+            "target": 55215,
+            "weight": 0.5956178707370722,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 442242,
+            "weight": 0.5938863065728994,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 66643,
+            "weight": 0.5807510202559054,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 78438,
+            "weight": 0.5778796638822327,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 78503,
+            "weight": 0.5665490500344468,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 82898,
+            "weight": 0.5427786646268977,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 273171,
+            "weight": 0.5384407795645298,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 56879,
+            "weight": 0.5381451654711552,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 55216,
+            "weight": 0.4897055246543007,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 328102,
+            "weight": 0.47248561554650886,
+            "root": 74332
+        },
+        {
+            "source": 273504,
+            "target": 82898,
+            "weight": 0.6408680353103392,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 55216,
+            "weight": 0.6154848470219533,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 56512,
+            "weight": 0.6022125186545574,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 55215,
+            "weight": 0.5216750100439518,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 80436,
+            "weight": 0.5086054515873644,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 78438,
+            "weight": 0.5072155313728972,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 273171,
+            "weight": 0.5021632917197419,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 69680,
+            "weight": 0.502096123580913,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 78503,
+            "weight": 0.49792841639320834,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 56879,
+            "weight": 0.4953732071717254,
+            "root": 273504
+        },
+        {
+            "source": 78438,
+            "target": 55215,
+            "weight": 0.638680789983424,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 69680,
+            "weight": 0.5942766372615772,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 55216,
+            "weight": 0.5889594862876645,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 442242,
+            "weight": 0.5825367786969698,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 74332,
+            "weight": 0.5778796638822327,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 82898,
+            "weight": 0.57704169614601,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 80436,
+            "weight": 0.5709185835777442,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 78503,
+            "weight": 0.5405272229478101,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 66643,
+            "weight": 0.5088446422943964,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 273504,
+            "weight": 0.5072155313728972,
+            "root": 78438
+        },
+        {
+            "source": 272615,
+            "target": 66643,
+            "weight": 0.45070343495663284,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 78503,
+            "weight": 0.4414816878074727,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 349707,
+            "weight": 0.4230515918760065,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 55056,
+            "weight": 0.4153872334683128,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 70175,
+            "weight": 0.4045581505617105,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 273171,
+            "weight": 0.39865367439271737,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 56879,
+            "weight": 0.3958311624481966,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 328102,
+            "weight": 0.3532409952388681,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 74020,
+            "weight": 0.33164988945433693,
+            "root": 272615
+        },
+        {
+            "source": 272615,
+            "target": 272641,
+            "weight": 0.311275021387311,
+            "root": 272615
+        },
+        {
+            "source": 56512,
+            "target": 273504,
+            "weight": 0.6022125186545574,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 55216,
+            "weight": 0.5809056083901207,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 82898,
+            "weight": 0.5668882126038156,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 66643,
+            "weight": 0.523859018451066,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 78503,
+            "weight": 0.5023939093113838,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 69680,
+            "weight": 0.49168622409825424,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 55056,
+            "weight": 0.4769569763551948,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 55215,
+            "weight": 0.47459241250569745,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 78438,
+            "weight": 0.4718985330773198,
+            "root": 56512
+        },
+        {
+            "source": 56512,
+            "target": 442242,
+            "weight": 0.4671669078075024,
+            "root": 56512
+        },
+        {
+            "source": 272641,
+            "target": 349707,
+            "weight": 0.6322361350964073,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 223818,
+            "weight": 0.5078007830046404,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 68557,
+            "weight": 0.45557345160942025,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 101615,
+            "weight": 0.4380507417954448,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 84182,
+            "weight": 0.369550855337993,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 92096,
+            "weight": 0.34514538245746806,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 299134,
+            "weight": 0.3382076003112351,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 84525,
+            "weight": 0.3287716865455428,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 207627,
+            "weight": 0.32845111232168117,
+            "root": 272641
+        },
+        {
+            "source": 272641,
+            "target": 69162,
+            "weight": 0.3173663823465384,
+            "root": 272641
+        },
+        {
+            "source": 326594,
+            "target": 55056,
+            "weight": 0.5548921665715718,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 55216,
+            "weight": 0.42941754885592925,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 273171,
+            "weight": 0.4160617546289594,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 56879,
+            "weight": 0.40222859043267545,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 273504,
+            "weight": 0.3874649733647652,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 300162,
+            "weight": 0.3830728281497745,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 56512,
+            "weight": 0.3614424075699788,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 66643,
+            "weight": 0.3431804138158627,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 362788,
+            "weight": 0.340821465460759,
+            "root": 326594
+        },
+        {
+            "source": 326594,
+            "target": 69680,
+            "weight": 0.3339680278665692,
+            "root": 326594
+        },
+        {
+            "source": 442242,
+            "target": 78503,
+            "weight": 0.7491510917168515,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 55215,
+            "weight": 0.7139481307425629,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 56879,
+            "weight": 0.6819101124686274,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 66643,
+            "weight": 0.6654954991455051,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 82898,
+            "weight": 0.6070988738310937,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 74332,
+            "weight": 0.5938863065728994,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 78438,
+            "weight": 0.5825367786969698,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 273171,
+            "weight": 0.581244748550307,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 69680,
+            "weight": 0.5665175305950222,
+            "root": 442242
+        },
+        {
+            "source": 442242,
+            "target": 55216,
+            "weight": 0.5649698396547458,
+            "root": 442242
+        },
+        {
+            "source": 300162,
+            "target": 78503,
+            "weight": 0.4206791421822928,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 273171,
+            "weight": 0.4002464230256274,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 66643,
+            "weight": 0.3977357412952623,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 56879,
+            "weight": 0.39658945054174016,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 326594,
+            "weight": 0.3830728281497745,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 55056,
+            "weight": 0.37375643424205507,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 362788,
+            "weight": 0.3505595550715775,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 69680,
+            "weight": 0.3442610606061239,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 273504,
+            "weight": 0.34319382948533605,
+            "root": 300162
+        },
+        {
+            "source": 300162,
+            "target": 55216,
+            "weight": 0.3403770062484738,
+            "root": 300162
+        },
+        {
+            "source": 349707,
+            "target": 272641,
+            "weight": 0.6322361350964073,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 272615,
+            "weight": 0.4230515918760065,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 223818,
+            "weight": 0.3472581680740104,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 69680,
+            "weight": 0.3383740102050165,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 80436,
+            "weight": 0.3135259263362431,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 68557,
+            "weight": 0.3115426512203614,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 101615,
+            "weight": 0.3113072372487176,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 78503,
+            "weight": 0.30004139883937364,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 66643,
+            "weight": 0.29248123749993105,
+            "root": 349707
+        },
+        {
+            "source": 349707,
+            "target": 84182,
+            "weight": 0.2626919803016766,
+            "root": 349707
+        },
+        {
+            "source": 308236,
+            "target": 328102,
+            "weight": 0.6599813221524813,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 55215,
+            "weight": 0.42149950359989163,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 74332,
+            "weight": 0.41028067238047605,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 78503,
+            "weight": 0.39498048612253245,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 442242,
+            "weight": 0.3917412877470554,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 55216,
+            "weight": 0.378079494024516,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 66643,
+            "weight": 0.3673256956729345,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 56879,
+            "weight": 0.36602396686996697,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 273171,
+            "weight": 0.35474338165592273,
+            "root": 308236
+        },
+        {
+            "source": 308236,
+            "target": 55056,
+            "weight": 0.35136051478615243,
+            "root": 308236
+        },
+        {
+            "source": 55056,
+            "target": 273171,
+            "weight": 0.634769569810245,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 56879,
+            "weight": 0.6132949439469111,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 66643,
+            "weight": 0.5665868053070372,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 326594,
+            "weight": 0.5548921665715718,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 55216,
+            "weight": 0.5402744424180366,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 78503,
+            "weight": 0.539831533174051,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 362788,
+            "weight": 0.49312031760494596,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 56512,
+            "weight": 0.4769569763551948,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 273504,
+            "weight": 0.47411845028522487,
+            "root": 55056
+        },
+        {
+            "source": 55056,
+            "target": 442242,
+            "weight": 0.45159647898364147,
+            "root": 55056
+        },
+        {
+            "source": 82898,
+            "target": 273504,
+            "weight": 0.6408680353103392,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 442242,
+            "weight": 0.6070988738310937,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 55215,
+            "weight": 0.6020722415680443,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 78438,
+            "weight": 0.57704169614601,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 55216,
+            "weight": 0.571600087854298,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 56512,
+            "weight": 0.5668882126038156,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 69680,
+            "weight": 0.5466525520544552,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 74332,
+            "weight": 0.5427786646268977,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 66643,
+            "weight": 0.5320838815559211,
+            "root": 82898
+        },
+        {
+            "source": 82898,
+            "target": 80436,
+            "weight": 0.5305852666556358,
+            "root": 82898
+        },
+        {
+            "source": 66643,
+            "target": 78503,
+            "weight": 0.810798931268085,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 273171,
+            "weight": 0.704214455601151,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 56879,
+            "weight": 0.6881977561529783,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 442242,
+            "weight": 0.6654954991455051,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 55215,
+            "weight": 0.6328399682356717,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 74332,
+            "weight": 0.5807510202559054,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 55056,
+            "weight": 0.5665868053070372,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 55216,
+            "weight": 0.544517451923041,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 82898,
+            "weight": 0.5320838815559211,
+            "root": 66643
+        },
+        {
+            "source": 66643,
+            "target": 56512,
+            "weight": 0.523859018451066,
+            "root": 66643
+        },
+        {
+            "source": 273171,
+            "target": 56879,
+            "weight": 0.7513803929547749,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 66643,
+            "weight": 0.704214455601151,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 78503,
+            "weight": 0.6968994634374821,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 55056,
+            "weight": 0.634769569810245,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 442242,
+            "weight": 0.581244748550307,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 55216,
+            "weight": 0.5696414046909933,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 55215,
+            "weight": 0.5632623722566009,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 74332,
+            "weight": 0.5384407795645298,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 273504,
+            "weight": 0.5021632917197419,
+            "root": 273171
+        },
+        {
+            "source": 273171,
+            "target": 69680,
+            "weight": 0.4575669426181941,
+            "root": 273171
+        },
+        {
+            "source": 97754,
+            "target": 76447155,
+            "weight": 0.5538838886419215,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 73319,
+            "weight": 0.5395723796845237,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 74021,
+            "weight": 0.5325923086861436,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 73318,
+            "weight": 0.5242264457209153,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 80436,
+            "weight": 0.513824780982935,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 74019,
+            "weight": 0.5119251674919147,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 69680,
+            "weight": 0.47750829319264426,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 180459,
+            "weight": 0.47146212098350077,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 82897,
+            "weight": 0.4612633997787272,
+            "root": 97754
+        },
+        {
+            "source": 97754,
+            "target": 64792,
+            "weight": 0.4423435004926204,
+            "root": 97754
+        },
+        {
+            "source": 74332,
+            "target": 55215,
+            "weight": 0.5956178707370722,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 442242,
+            "weight": 0.5938863065728994,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 66643,
+            "weight": 0.5807510202559054,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 78438,
+            "weight": 0.5778796638822327,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 78503,
+            "weight": 0.5665490500344468,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 82898,
+            "weight": 0.5427786646268977,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 273171,
+            "weight": 0.5384407795645298,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 56879,
+            "weight": 0.5381451654711552,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 55216,
+            "weight": 0.4897055246543007,
+            "root": 74332
+        },
+        {
+            "source": 74332,
+            "target": 328102,
+            "weight": 0.47248561554650886,
+            "root": 74332
+        },
+        {
+            "source": 70175,
+            "target": 74020,
+            "weight": 0.8047180456082662,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 180459,
+            "weight": 0.7490500099873335,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 64792,
+            "weight": 0.6128568245770234,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 156133,
+            "weight": 0.5517469241942353,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 73318,
+            "weight": 0.525893031588103,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 82897,
+            "weight": 0.5182701125663948,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 73319,
+            "weight": 0.5051989727668844,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 69063,
+            "weight": 0.4798710381930176,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 74021,
+            "weight": 0.47709844646621763,
+            "root": 70175
+        },
+        {
+            "source": 70175,
+            "target": 74019,
+            "weight": 0.46545229249412134,
+            "root": 70175
+        },
+        {
+            "source": 273504,
+            "target": 82898,
+            "weight": 0.6408680353103392,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 55216,
+            "weight": 0.6154848470219533,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 56512,
+            "weight": 0.6022125186545574,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 55215,
+            "weight": 0.5216750100439518,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 80436,
+            "weight": 0.5086054515873644,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 78438,
+            "weight": 0.5072155313728972,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 273171,
+            "weight": 0.5021632917197419,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 69680,
+            "weight": 0.502096123580913,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 78503,
+            "weight": 0.49792841639320834,
+            "root": 273504
+        },
+        {
+            "source": 273504,
+            "target": 56879,
+            "weight": 0.4953732071717254,
+            "root": 273504
+        },
+        {
+            "source": 362788,
+            "target": 55216,
+            "weight": 0.5217209769830169,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 55056,
+            "weight": 0.49312031760494596,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 55215,
+            "weight": 0.46166052966760396,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 56879,
+            "weight": 0.44645669515326747,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 78503,
+            "weight": 0.440807772287251,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 442242,
+            "weight": 0.4347228943723544,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 273504,
+            "weight": 0.4344918963492244,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 273171,
+            "weight": 0.41730428346162163,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 82898,
+            "weight": 0.4139934621321237,
+            "root": 362788
+        },
+        {
+            "source": 362788,
+            "target": 66643,
+            "weight": 0.4090877628028331,
+            "root": 362788
+        },
+        {
+            "source": 74020,
+            "target": 70175,
+            "weight": 0.8047180456082662,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 180459,
+            "weight": 0.7763618921749756,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 64792,
+            "weight": 0.6110825386754584,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 73318,
+            "weight": 0.5573734584357144,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 156133,
+            "weight": 0.5352483604403817,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 82897,
+            "weight": 0.5200312048041994,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 73319,
+            "weight": 0.5044497977044144,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 74021,
+            "weight": 0.49146604708482206,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 74019,
+            "weight": 0.4852971162791374,
+            "root": 74020
+        },
+        {
+            "source": 74020,
+            "target": 68654,
+            "weight": 0.4814931157151043,
+            "root": 74020
+        },
+        {
+            "source": 78438,
+            "target": 55215,
+            "weight": 0.638680789983424,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 69680,
+            "weight": 0.5942766372615772,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 55216,
+            "weight": 0.5889594862876645,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 442242,
+            "weight": 0.5825367786969698,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 74332,
+            "weight": 0.5778796638822327,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 82898,
+            "weight": 0.57704169614601,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 80436,
+            "weight": 0.5709185835777442,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 78503,
+            "weight": 0.5405272229478101,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 66643,
+            "weight": 0.5088446422943964,
+            "root": 78438
+        },
+        {
+            "source": 78438,
+            "target": 273504,
+            "weight": 0.5072155313728972,
+            "root": 78438
+        },
+        {
+            "source": 78503,
+            "target": 66643,
+            "weight": 0.810798931268085,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 56879,
+            "weight": 0.7782960916916076,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 442242,
+            "weight": 0.7491510917168515,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 273171,
+            "weight": 0.6968994634374821,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 55215,
+            "weight": 0.6837206884035321,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 74332,
+            "weight": 0.5665490500344468,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 55216,
+            "weight": 0.5452925193979847,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 78438,
+            "weight": 0.5405272229478101,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 55056,
+            "weight": 0.539831533174051,
+            "root": 78503
+        },
+        {
+            "source": 78503,
+            "target": 69680,
+            "weight": 0.5262067113712379,
+            "root": 78503
+        },
+        {
+            "source": 73319,
+            "target": 74021,
+            "weight": 0.7456148236333697,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 73318,
+            "weight": 0.6647544678736461,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 82897,
+            "weight": 0.6608176518474203,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 781211,
+            "weight": 0.6028377233236764,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 180459,
+            "weight": 0.5958379599950827,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 74019,
+            "weight": 0.5679453373067372,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 76447155,
+            "weight": 0.5527508819538425,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 97754,
+            "weight": 0.5395723796845237,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 64792,
+            "weight": 0.5385202367463744,
+            "root": 73319
+        },
+        {
+            "source": 73319,
+            "target": 70175,
+            "weight": 0.5051989727668844,
+            "root": 73319
+        },
+        {
+            "source": 328102,
+            "target": 308236,
+            "weight": 0.6599813221524813,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 74332,
+            "weight": 0.47248561554650886,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 55215,
+            "weight": 0.4652537288496185,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 78503,
+            "weight": 0.45247787877261536,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 442242,
+            "weight": 0.4385003691927935,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 66643,
+            "weight": 0.4315473298885239,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 56879,
+            "weight": 0.42034147674104616,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 55216,
+            "weight": 0.40599213139535273,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 55056,
+            "weight": 0.3941060797313082,
+            "root": 328102
+        },
+        {
+            "source": 328102,
+            "target": 273171,
+            "weight": 0.39324148914431345,
+            "root": 328102
+        },
+        {
+            "source": 56879,
+            "target": 78503,
+            "weight": 0.7782960916916076,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 273171,
+            "weight": 0.7513803929547749,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 66643,
+            "weight": 0.6881977561529783,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 442242,
+            "weight": 0.6819101124686274,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 55215,
+            "weight": 0.6195163426662793,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 55056,
+            "weight": 0.6132949439469111,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 55216,
+            "weight": 0.5995677289369805,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 74332,
+            "weight": 0.5381451654711552,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 273504,
+            "weight": 0.4953732071717254,
+            "root": 56879
+        },
+        {
+            "source": 56879,
+            "target": 78438,
+            "weight": 0.46725397309656375,
+            "root": 56879
+        },
+        {
+            "source": 55215,
+            "target": 442242,
+            "weight": 0.7139481307425629,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 78503,
+            "weight": 0.6837206884035321,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 55216,
+            "weight": 0.6621142530026344,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 78438,
+            "weight": 0.638680789983424,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 66643,
+            "weight": 0.6328399682356717,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 56879,
+            "weight": 0.6195163426662793,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 82898,
+            "weight": 0.6020722415680443,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 74332,
+            "weight": 0.5956178707370722,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 69680,
+            "weight": 0.5747519197501895,
+            "root": 55215
+        },
+        {
+            "source": 55215,
+            "target": 273171,
+            "weight": 0.5632623722566009,
+            "root": 55215
+        },
+        {
+            "source": 69680,
+            "target": 80436,
+            "weight": 0.8100064715652499,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 78438,
+            "weight": 0.5942766372615772,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 55215,
+            "weight": 0.5747519197501895,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 55216,
+            "weight": 0.5683587204656414,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 442242,
+            "weight": 0.5665175305950222,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 82898,
+            "weight": 0.5466525520544552,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 78503,
+            "weight": 0.5262067113712379,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 66643,
+            "weight": 0.507297754600103,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 273504,
+            "weight": 0.502096123580913,
+            "root": 69680
+        },
+        {
+            "source": 69680,
+            "target": 56512,
+            "weight": 0.49168622409825424,
+            "root": 69680
+        },
+        {
+            "source": 55216,
+            "target": 55215,
+            "weight": 0.6621142530026344,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 273504,
+            "weight": 0.6154848470219533,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 56879,
+            "weight": 0.5995677289369805,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 78438,
+            "weight": 0.5889594862876645,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 56512,
+            "weight": 0.5809056083901207,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 82898,
+            "weight": 0.571600087854298,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 273171,
+            "weight": 0.5696414046909933,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 69680,
+            "weight": 0.5683587204656414,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 442242,
+            "weight": 0.5649698396547458,
+            "root": 55216
+        },
+        {
+            "source": 55216,
+            "target": 78503,
+            "weight": 0.5452925193979847,
+            "root": 55216
+        },
+        {
+            "source": 76447155,
+            "target": 97754,
+            "weight": 0.5538838886419215,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 73319,
+            "weight": 0.5527508819538425,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 73318,
+            "weight": 0.516763629325462,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 80436,
+            "weight": 0.48371106924350254,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 64792,
+            "weight": 0.4723835551183203,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 69063,
+            "weight": 0.4644124330663428,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 74020,
+            "weight": 0.4594113434465391,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 82897,
+            "weight": 0.4531126069289727,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 74019,
+            "weight": 0.44774457057032024,
+            "root": 76447155
+        },
+        {
+            "source": 76447155,
+            "target": 69680,
+            "weight": 0.4453509079525308,
+            "root": 76447155
+        },
+        {
+            "source": 80436,
+            "target": 69680,
+            "weight": 0.8100064715652499,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 78438,
+            "weight": 0.5709185835777442,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 55216,
+            "weight": 0.5406805203260865,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 82898,
+            "weight": 0.5305852666556358,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 55215,
+            "weight": 0.522651089161175,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 442242,
+            "weight": 0.51929190475019,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 97754,
+            "weight": 0.513824780982935,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 273504,
+            "weight": 0.5086054515873644,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 73319,
+            "weight": 0.502536557587606,
+            "root": 80436
+        },
+        {
+            "source": 80436,
+            "target": 76447155,
+            "weight": 0.48371106924350254,
+            "root": 80436
+        }
+    ]
+}
