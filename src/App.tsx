@@ -1,17 +1,20 @@
-import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls, Text } from "@react-three/drei";
-import { useCallback, useEffect, useState } from "react";
-import { XR, createXRStore } from "@react-three/xr";
-import * as THREE from "three";
+import { useEffect, useState } from "react";
+// import * as THREE from "three";
 import jsonData from "../assets/experiment_data.json";
 import { Stats } from "@react-three/drei";
 import {
   normalizeLinkSize,
-  normalizeNodeSize,
-  setNodeColor,
+  // normalizeNodeSize,
+  // setNodeColor,
 } from "./utils/graph";
 import { toPosition } from "./utils/toPosition";
-import { animated, useSpring } from "@react-spring/three";
+import { createXRStore } from "@react-three/xr";
+import { LinkMesh, NodeMesh } from "./types";
+import { Canvas } from "@react-three/fiber";
+import { Environment, OrbitControls } from "@react-three/drei";
+import { XR } from "@react-three/xr";
+import { useCallback } from "react";
+import { Node } from "./components/Node";
 
 const store = createXRStore({
   hand: {
@@ -19,46 +22,31 @@ const store = createXRStore({
       rayModel: { maxLength: 100, opacity: 0.02 },
     },
   },
-  foveation: 0.3, // test if his improves pixalated image at the border
+  foveation: 0.3,
 });
 
-type Node = {
-  id: number;
-  name: string;
-  val: number;
-  level: number;
-  normalizedVal: number;
-  color: string;
-  position: [number, number, number];
-};
-
-type Link = {
-  source: Node | number; // Updated to allow Node object or ID
-  target: Node | number; // Updated to allow Node object or ID
-  weight: number;
-  normalizedWeight: number;
-  color: string;
+export type NodesPosition = {
+  left: NodeMesh;
+  center: NodeMesh;
+  right: NodeMesh;
 };
 
 export default function App() {
-  const [nodes, setNodes] = useState<Node[]>([]);
-  const [links, setLinks] = useState<Link[]>([]);
+  const [links, setLinks] = useState<LinkMesh[]>([]);
 
-  const [nodesPosition, setNodesPosition] = useState<{
-    left: Node;
-    center: Node;
-    right: Node;
-  } | null>(null);
+  const [nodesPosition, setNodesPosition] = useState<NodesPosition | null>(
+    null
+  );
 
   useEffect(() => {
     let data = JSON.parse(JSON.stringify(jsonData)) as {
-      nodes: Node[];
-      links: Link[];
+      nodes: NodeMesh[];
+      links: LinkMesh[];
     };
 
     // Data Processing => to see if we keep it
     // data = normalizeNodeSize(data);
-    // data = normalizeLinkSize(data);
+    data = normalizeLinkSize(data);
     // data = setNodeColor(data);
 
     const [left, center, right] = data.nodes;
@@ -80,7 +68,6 @@ export default function App() {
       }
     });
 
-    setNodes(data.nodes);
     setLinks(data.links);
 
     setNodesPosition({
@@ -110,14 +97,14 @@ export default function App() {
         });
       }
     },
-    [nodesPosition]
+    [nodesPosition, setNodesPosition]
   );
 
   return (
     <div
       style={{
-        width: "100vw",
-        height: "100vh",
+        width: "100%",
+        height: "100%",
         position: "relative",
       }}
     >
@@ -125,21 +112,22 @@ export default function App() {
         onClick={() => store.enterAR()}
         style={{
           position: "absolute",
-          bottom: "20%",
+          bottom: "5%",
           left: "50%",
           transform: "translateX(-50%)",
-          zIndex: 1,
+          zIndex: 10,
         }}
       >
         Enter AR
       </button>
 
-      <pre>{JSON.stringify(jsonData.nodes[0], null, 2)}</pre>
-      <pre>{JSON.stringify(jsonData.nodes[1], null, 2)}</pre>
-      <pre>{JSON.stringify(jsonData.nodes[2], null, 2)}</pre>
-
-      <Stats />
-      <Canvas camera={{ position: [0, 0, 200], fov: 75 }}>
+      <Canvas
+        camera={{ position: [0, 0, 200], fov: 75 }}
+        style={{
+          height: "50vh",
+          width: "50vw",
+        }}
+      >
         <XR store={store}>
           <OrbitControls />
           <Environment preset="sunset" background />
@@ -156,18 +144,18 @@ export default function App() {
 
             {nodesPosition && (
               <group>
-                <NodeMesh
+                <Node
                   node={nodesPosition.left}
                   onClick={() => onInteraction("moveRightward")}
                   position={nodesPosition.left.position}
                 />
 
-                <NodeMesh
+                <Node
                   node={nodesPosition.center}
                   position={nodesPosition.center.position}
                 />
 
-                <NodeMesh
+                <Node
                   node={nodesPosition.right}
                   onClick={() => onInteraction("moveLeftward")}
                   position={nodesPosition.right.position}
@@ -179,91 +167,8 @@ export default function App() {
           {/* <axesHelper args={[50]} /> */}
         </XR>
       </Canvas>
+
+      <Stats />
     </div>
-  );
-}
-
-function NodeMesh({
-  node,
-  onClick,
-  position,
-}: {
-  node: Node;
-  onClick?: () => void;
-  position: [number, number, number];
-}) {
-  const [showText, setShowText] = useState(false);
-
-  const { animatedPosition } = useSpring({
-    animatedPosition: position,
-    config: { mass: 1, tension: 170, friction: 26, precision: 0.0001 },
-  });
-
-  return (
-    <animated.group
-      position={animatedPosition}
-      onPointerEnter={() => setShowText(true)}
-      onPointerLeave={() => setShowText(false)}
-      onClick={onClick}
-    >
-      <mesh>
-        <sphereGeometry args={[node.normalizedVal, 16, 16]} />
-        <meshBasicMaterial color={node.color || "skyblue"} />
-      </mesh>
-
-      {/* We need to see where this nodes points to */}
-      {/* <Text
-        position={[0, node.normalizedVal + 2, 0]}
-        fontSize={4}
-        color={node.color || "white"}
-        anchorX="center"
-        anchorY="middle"
-      >
-        Points to: {node.}
-      </Text> */}
-
-      {/* {showText && ( */}
-      <Text
-        position={toPosition({
-          positionOut: 1.2,
-          positionTop: 1,
-        })}
-        fontSize={0.3}
-        color={node.color || "white"}
-        anchorX="center"
-        anchorY="middle"
-      >
-        {node.name}
-      </Text>
-      {/* )} */}
-    </animated.group>
-  );
-}
-
-function LinkLine({ link }: { link: Link }) {
-  const sourceNode = link.source as Node;
-  const targetNode = link.target as Node;
-
-  const positions = new Float32Array([
-    sourceNode.position[0],
-    sourceNode.position[1],
-    sourceNode.position[2],
-    targetNode.position[0],
-    targetNode.position[1],
-    targetNode.position[2],
-  ]);
-
-  return (
-    <line>
-      <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          array={positions}
-          itemSize={3}
-          count={2}
-        />
-      </bufferGeometry>
-      <lineBasicMaterial color={link.color || "gray"} />
-    </line>
   );
 }
