@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    { "id": 198023, "name": "Robotik", "val": 12, "level": 0 },
+    { "id": 624372, "name": "Miba AG", "val": 8, "level": 1 },
+    {
+      "id": 215056,
+      "name": "Thomas Eder (Literaturwissenschaftler)",
+      "val": 8,
+      "level": 1
+    },
+    { "id": 599043, "name": "Berichtswesen", "val": 8, "level": 1 },
+    {
+      "id": 449132,
+      "name": "Manufacturing Execution System",
+      "val": 8,
+      "level": 1
+    },
+    { "id": 116962, "name": "Fraunhofer-Gesellschaft", "val": 8, "level": 1 },
+    { "id": 360764, "name": "Fuji (Vulkan)", "val": 8, "level": 1 },
+    { "id": 80941, "name": "Erweiterte Realit\u00e4t", "val": 8, "level": 1 },
+    { "id": 76954, "name": "Exoskelett", "val": 9, "level": 1 },
+    { "id": 401146, "name": "Feldkirchen an der Donau", "val": 9, "level": 1 },
+    { "id": 59155, "name": "Virtuelle Realit\u00e4t", "val": 9, "level": 1 },
+    {
+      "id": 64904,
+      "name": "Entbindungspfleger*Hebamme",
+      "val": 14,
+      "level": 0
+    },
+    { "id": 111003, "name": "Geburtshilfe", "val": 11, "level": 1 },
+    { "id": 142836, "name": "Gyn\u00e4kologie", "val": 11, "level": 1 },
+    { "id": 618762, "name": "Schwangerschaftsdauer", "val": 3, "level": 1 },
+    { "id": 91576, "name": "Kaiserschnitt", "val": 4, "level": 1 },
+    { "id": 467381, "name": "Akupunktur", "val": 2, "level": 1 },
+    { "id": 318972, "name": "Gutau", "val": 2, "level": 1 },
+    { "id": 609451, "name": "Pyhrn\u2013Eisenwurzen", "val": 16, "level": 0 },
+    {
+      "id": 85305891,
+      "name": "Fachkraft zur Leitung einer Funktionseinheit",
+      "val": 3,
+      "level": 1
+    },
+    { "id": 93041, "name": "Kirchdorf (Siedlungstyp)", "val": 1, "level": 1 }
+  ],
+  "links": [
+    {
+      "source": 198023,
+      "target": 624372,
+      "weight": 0.8164965809277261,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 215056,
+      "weight": 0.8164965809277261,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 599043,
+      "weight": 0.8164965809277261,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 449132,
+      "weight": 0.8164965809277261,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 116962,
+      "weight": 0.8164965809277261,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 360764,
+      "weight": 0.8164965809277261,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 80941,
+      "weight": 0.8164965809277261,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 76954,
+      "weight": 0.769800358919501,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 401146,
+      "weight": 0.769800358919501,
+      "root": 198023
+    },
+    {
+      "source": 198023,
+      "target": 59155,
+      "weight": 0.769800358919501,
+      "root": 198023
+    },
+    {
+      "source": 64904,
+      "target": 111003,
+      "weight": 0.8058229640253802,
+      "root": 64904
+    },
+    {
+      "source": 64904,
+      "target": 142836,
+      "weight": 0.8058229640253802,
+      "root": 64904
+    },
+    {
+      "source": 64904,
+      "target": 618762,
+      "weight": 0.4629100498862757,
+      "root": 64904
+    },
+    {
+      "source": 64904,
+      "target": 91576,
+      "weight": 0.4008918628686366,
+      "root": 64904
+    },
+    {
+      "source": 64904,
+      "target": 467381,
+      "weight": 0.3779644730092272,
+      "root": 64904
+    },
+    {
+      "source": 64904,
+      "target": 318972,
+      "weight": 0.3779644730092272,
+      "root": 64904
+    },
+    {
+      "source": 64904,
+      "target": 609451,
+      "weight": 0.33407655239053047,
+      "root": 64904
+    },
+    {
+      "source": 64904,
+      "target": 85305891,
+      "weight": 0.3086066999241838,
+      "root": 64904
+    },
+    {
+      "source": 64904,
+      "target": 93041,
+      "weight": 0.2672612419124244,
+      "root": 64904
+    }
+  ]
+}
