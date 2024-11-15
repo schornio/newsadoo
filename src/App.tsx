@@ -33,22 +33,20 @@ export type NodesPosition = {
 };
 
 export default function App() {
-  const [links, setLinks] = useState<LinkMesh[]>([]);
+  const [nodes, setNodes] = useState<NodeMesh[]>([]);
+  const [nodePositions, setNodePositions] = useState<number[]>([0, 1, 2]); // Indices into positions array
 
-  const [nodesPosition, setNodesPosition] = useState<NodesPosition | null>(
-    null
-  );
+  const positions = [
+    toPosition({ positionLeft: 4 }), // Position index 0: Left
+    toPosition({ positionOut: 1 }), // Position index 1: Center
+    toPosition({ positionRight: 4 }), // Position index 2: Right
+  ];
 
-  const positions = {
-    left: toPosition({ positionLeft: 4 }),
-    center: toPosition({ positionOut: 1 }),
-    right: toPosition({ positionRight: 4 }),
-  };
-
-  const rotations = {
-    left: toRotation({ rotationYInRad: Math.PI / 2 }),
-    right: toRotation({ rotationYInRad: -Math.PI / 2 }),
-  };
+  const rotations = [
+    toRotation({ rotationYInDeg: 30 }), // Rotation index 0: Left
+    [0, 0, 0], // Rotation index 1: Center
+    toRotation({ rotationYInDeg: -30 }), // Rotation index 2: Right
+  ];
 
   useEffect(() => {
     let data = JSON.parse(JSON.stringify(jsonData)) as {
@@ -56,70 +54,24 @@ export default function App() {
       links: LinkMesh[];
     };
 
-    // Data Processing => to see if we keep it
-    // data = normalizeNodeSize(data);
     data = normalizeLinkSize(data);
-    // data = setNodeColor(data);
 
-    const [left, center, right] = data.nodes;
+    const initialNodes = data.nodes.slice(0, 3);
 
-    data.links.forEach((link) => {
-      const sourceNode = data.nodes.find((n) => n.id === link.source);
-      const targetNode = data.nodes.find((n) => n.id === link.target);
-
-      if (sourceNode && targetNode) {
-        link.source = sourceNode;
-        link.target = targetNode;
-      }
-    });
-
-    setLinks(data.links);
-
-    setNodesPosition({
-      left,
-      center,
-      right,
-    });
+    setNodes(initialNodes);
   }, []);
 
-  const onInteraction = useCallback(
-    (nodeClicked: "left" | "right") => {
-      if (!nodesPosition) {
-        return;
+  const onInteraction = useCallback((nodeClicked: "left" | "right") => {
+    setNodePositions((prevPositions) => {
+      let newPositions = [...prevPositions];
+      if (nodeClicked === "left") {
+        newPositions = [prevPositions[1], prevPositions[2], prevPositions[0]];
+      } else if (nodeClicked === "right") {
+        newPositions = [prevPositions[2], prevPositions[0], prevPositions[1]];
       }
-
-      function moveNodesClockwise() {
-        if (!nodesPosition) {
-          return;
-        }
-
-        setNodesPosition({
-          center: nodesPosition.left,
-          left: nodesPosition.right,
-          right: nodesPosition.center,
-        });
-      }
-
-      function moveNodesCounterClockwise() {
-        if (!nodesPosition) {
-          return;
-        }
-
-        setNodesPosition({
-          center: nodesPosition.right,
-          right: nodesPosition.left,
-          left: nodesPosition.center,
-        });
-      }
-
-      if (nodeClicked === "right") {
-        moveNodesCounterClockwise();
-      } else if (nodeClicked === "left") {
-        moveNodesClockwise();
-      }
-    },
-    [nodesPosition, setNodesPosition]
-  );
+      return newPositions;
+    });
+  }, []);
 
   return (
     <div
@@ -145,13 +97,13 @@ export default function App() {
       <Canvas
         camera={{ position: [0, 0, 200], fov: 75 }}
         style={{
-          height: "50vh",
-          width: "50vw",
+          height: "100vh",
+          width: "100vw",
         }}
       >
         <XR store={store}>
           <OrbitControls />
-          <Environment preset="studio" background />
+          <Environment files="/studio.hdr" background />
 
           <group
             scale={0.7}
@@ -163,28 +115,26 @@ export default function App() {
             {/* {links.length > 0 &&
               links.map((link, index) => <LinkLine key={index} link={link} />)} */}
 
-            {nodesPosition && (
+            {nodes.length > 0 && (
               <group>
-                <Node
-                  node={nodesPosition.left}
-                  onClick={() => onInteraction("left")}
-                  position={positions.left}
-                  rotation={toRotation({ rotationYInDeg: 30 })}
-                />
-
-                <Node node={nodesPosition.center} position={positions.center} />
-
-                <Node
-                  node={nodesPosition.right}
-                  onClick={() => onInteraction("right")}
-                  position={positions.right}
-                  rotation={toRotation({ rotationYInDeg: -30 })}
-                />
+                {nodes.map((node, index) => (
+                  <Node
+                    key={node.id}
+                    node={node}
+                    onClick={
+                      nodePositions[index] === 0
+                        ? () => onInteraction("left")
+                        : nodePositions[index] === 2
+                          ? () => onInteraction("right")
+                          : undefined
+                    }
+                    position={positions[nodePositions[index]]}
+                    rotation={rotations[nodePositions[index]]}
+                  />
+                ))}
               </group>
             )}
           </group>
-
-          {/* <axesHelper args={[50]} /> */}
         </XR>
       </Canvas>
 
