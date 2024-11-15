@@ -38,6 +38,12 @@ export default function App() {
     null
   );
 
+  const positions = {
+    left: toPosition({ positionLeft: 5 }),
+    center: toPosition({ positionOut: 2 }),
+    right: toPosition({ positionRight: 5 }),
+  };
+
   useEffect(() => {
     let data = JSON.parse(JSON.stringify(jsonData)) as {
       nodes: NodeMesh[];
@@ -50,13 +56,6 @@ export default function App() {
     // data = setNodeColor(data);
 
     const [left, center, right] = data.nodes;
-
-    left.position = toPosition({
-      positionLeft: 10,
-    });
-    right.position = toPosition({
-      positionRight: 10,
-    });
 
     data.links.forEach((link) => {
       const sourceNode = data.nodes.find((n) => n.id === link.source);
@@ -78,23 +77,39 @@ export default function App() {
   }, []);
 
   const onInteraction = useCallback(
-    (move: "moveLeftward" | "moveRightward") => {
+    (nodeClicked: "left" | "right") => {
       if (!nodesPosition) {
         return;
       }
 
-      if (move === "moveLeftward") {
+      function moveNodesClockwise() {
+        if (!nodesPosition) {
+          return;
+        }
+
         setNodesPosition({
-          left: nodesPosition.right,
           center: nodesPosition.left,
+          left: nodesPosition.right,
           right: nodesPosition.center,
         });
-      } else if (move === "moveRightward") {
+      }
+
+      function moveNodesCounterClockwise() {
+        if (!nodesPosition) {
+          return;
+        }
+
         setNodesPosition({
-          left: nodesPosition.center,
           center: nodesPosition.right,
           right: nodesPosition.left,
+          left: nodesPosition.center,
         });
+      }
+
+      if (nodeClicked === "right") {
+        moveNodesCounterClockwise();
+      } else if (nodeClicked === "left") {
+        moveNodesClockwise();
       }
     },
     [nodesPosition, setNodesPosition]
@@ -130,7 +145,7 @@ export default function App() {
       >
         <XR store={store}>
           <OrbitControls />
-          <Environment preset="sunset" background />
+          <Environment preset="sunset" />
 
           <group
             scale={0.7}
@@ -146,19 +161,16 @@ export default function App() {
               <group>
                 <Node
                   node={nodesPosition.left}
-                  onClick={() => onInteraction("moveRightward")}
-                  position={nodesPosition.left.position}
+                  onClick={() => onInteraction("left")}
+                  position={positions.left}
                 />
 
-                <Node
-                  node={nodesPosition.center}
-                  position={nodesPosition.center.position}
-                />
+                <Node node={nodesPosition.center} position={positions.center} />
 
                 <Node
                   node={nodesPosition.right}
-                  onClick={() => onInteraction("moveLeftward")}
-                  position={nodesPosition.right.position}
+                  onClick={() => onInteraction("right")}
+                  position={positions.right}
                 />
               </group>
             )}

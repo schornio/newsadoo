@@ -6,12 +6,19 @@ export type LinkMesh = {
   color: string;
 };
 
+/**
+ * PER = Person | ORG = Organization | LOC = Location
+ */
+export type TagEnum = "PER" | "ORG" | "LOC" | "EVENT" | "UNKNOWN";
+
 export type NodeMesh = {
   id: number;
   name: string;
+  tag_timeline: string;
+  tag_type: TagEnum;
   val: number;
   level: number;
-  normalizedVal: number;
-  color: string;
+  normalizedVal: number; // to see if we keep it
+  color: string; // to see if we keep it
   position: [number, number, number];
 };
