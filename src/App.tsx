@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // import * as THREE from "three";
-import jsonData from "../assets/experiment_data.json";
+import jsonData from "../assets/new_data.json";
 import { Stats } from "@react-three/drei";
 import {
   normalizeLinkSize,
@@ -16,6 +16,7 @@ import { XR } from "@react-three/xr";
 import { useCallback } from "react";
 import { Node } from "./components/Node";
 import { toRotation } from "./utils/toRotation";
+import { getConnectedNodes } from "./utils/getConnectedNodes";
 
 const store = createXRStore({
   hand: {
@@ -34,19 +35,22 @@ export type NodesPosition = {
 
 export default function App() {
   const [nodes, setNodes] = useState<NodeMesh[]>([]);
+  const [links, setLinks] = useState<LinkMesh[]>([]);
+  const [currentNode, setCurrentNode] = useState<NodeMesh | null>(null);
+
   const [nodePositions, setNodePositions] = useState<number[]>([0, 1, 2]); // Indices into positions array
 
-  const positions = [
-    toPosition({ positionLeft: 4 }), // Position index 0: Left
-    toPosition({ positionOut: 1 }), // Position index 1: Center
-    toPosition({ positionRight: 4 }), // Position index 2: Right
-  ];
+  const positions = {
+    center: toPosition({ positionOut: 1 }),
+    left: toPosition({ positionLeft: 4 }),
+    right: toPosition({ positionRight: 4 }),
+  };
 
-  const rotations = [
-    toRotation({ rotationYInDeg: 30 }), // Rotation index 0: Left
-    [0, 0, 0], // Rotation index 1: Center
-    toRotation({ rotationYInDeg: -30 }), // Rotation index 2: Right
-  ];
+  const rotations = {
+    center: toRotation({}),
+    left: toRotation({ rotationYInDeg: 30 }),
+    right: toRotation({ rotationYInDeg: -30 }),
+  };
 
   useEffect(() => {
     let data = JSON.parse(JSON.stringify(jsonData)) as {
@@ -54,11 +58,12 @@ export default function App() {
       links: LinkMesh[];
     };
 
-    data = normalizeLinkSize(data);
+    setNodes(data.nodes);
+    setLinks(data.links);
 
-    const initialNodes = data.nodes.slice(0, 3);
-
-    setNodes(initialNodes);
+    if (data.nodes.length > 0) {
+      setCurrentNode(data.nodes[0]);
+    }
   }, []);
 
   const onInteraction = useCallback((nodeClicked: "left" | "right") => {
@@ -73,6 +78,12 @@ export default function App() {
     });
   }, []);
 
+  const connectedNodes = getConnectedNodes({
+    links,
+    currentNode,
+    nodes,
+  });
+
   return (
     <div
       style={{
@@ -81,6 +92,10 @@ export default function App() {
         position: "relative",
       }}
     >
+      {/* <pre>{JSON.stringify(connectedNodesIds, null, 2)}</pre>
+      <pre>{JSON.stringify(connectedNodes, null, 2)}</pre> */}
+      <pre>{JSON.stringify(currentNode, null, 2)}</pre>
+
       <button
         onClick={() => store.enterAR()}
         style={{
@@ -97,8 +112,8 @@ export default function App() {
       <Canvas
         camera={{ position: [0, 0, 200], fov: 75 }}
         style={{
-          height: "100vh",
-          width: "100vw",
+          height: "50vh",
+          width: "50vw",
         }}
       >
         <XR store={store}>
@@ -112,33 +127,41 @@ export default function App() {
               positionTop: 1.5,
             })}
           >
-            {/* {links.length > 0 &&
-              links.map((link, index) => <LinkLine key={index} link={link} />)} */}
+            {currentNode && (
+              <>
+                <Node
+                  key={currentNode.id}
+                  node={currentNode}
+                  position={positions.center}
+                  rotation={rotations.center}
+                />
 
-            {nodes.length > 0 && (
-              <group>
-                {nodes.map((node, index) => (
-                  <Node
-                    key={node.id}
-                    node={node}
-                    onClick={
-                      nodePositions[index] === 0
-                        ? () => onInteraction("left")
-                        : nodePositions[index] === 2
-                          ? () => onInteraction("right")
-                          : undefined
-                    }
-                    position={positions[nodePositions[index]]}
-                    rotation={rotations[nodePositions[index]]}
-                  />
-                ))}
-              </group>
+                {connectedNodes.map((node, index) => {
+                  const angle = (index / connectedNodes.length) * Math.PI * 2;
+                  const position = [
+                    Math.cos(angle) * 4, // Radius from the center
+                    0,
+                    Math.sin(angle) * 4,
+                  ];
+                  const rotation = [0, angle, 0];
+
+                  return (
+                    <Node
+                      key={node.id}
+                      node={node}
+                      position={position}
+                      rotation={rotation}
+                      onClick={() => setCurrentNode(node)}
+                    />
+                  );
+                })}
+              </>
             )}
           </group>
         </XR>
       </Canvas>
 
-      <Stats />
+      {/* <Stats /> */}
     </div>
   );
 }

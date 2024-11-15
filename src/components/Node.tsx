@@ -10,6 +10,10 @@ import { toPosition } from "../utils/toPosition";
 const CARD_DEPTH = 0.1;
 const CARD_HEIGHT = 2.5;
 const LANDSCAPE_CARD = "portrait";
+const NOT_WORKING_IMAGE =
+  "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png";
+const IMAGE_PLACEHOLDER =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg/100px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg";
 
 export function Node({
   node,
@@ -57,7 +61,9 @@ export function Node({
 
       {node.image && (
         <Image
-          url={node.image}
+          url={
+            node.image === NOT_WORKING_IMAGE ? IMAGE_PLACEHOLDER : node.image
+          }
           position={toPosition({
             positionTop: 0.8,
             positionOut: CARD_DEPTH,
