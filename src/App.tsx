@@ -1,22 +1,17 @@
 import { useEffect, useState } from "react";
-// import * as THREE from "three";
 import jsonData from "../assets/new_data.json";
-import { Stats } from "@react-three/drei";
-import {
-  normalizeLinkSize,
-  // normalizeNodeSize,
-  // setNodeColor,
-} from "./utils/graph";
-import { toPosition } from "./utils/toPosition";
-import { createXRStore } from "@react-three/xr";
-import { LinkMesh, NodeMesh } from "./types";
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
-import { XR } from "@react-three/xr";
-import { useCallback } from "react";
+import { Environment, Line, OrbitControls } from "@react-three/drei";
+import { createXRStore, XR } from "@react-three/xr";
 import { Node } from "./components/Node";
-import { toRotation } from "./utils/toRotation";
 import { getConnectedNodes } from "./utils/getConnectedNodes";
+import {
+  forceSimulation,
+  forceLink,
+  forceManyBody,
+  forceCenter,
+} from "d3-force";
+import { LinkMesh, NodeMesh } from "./types";
 
 const store = createXRStore({
   hand: {
@@ -27,36 +22,20 @@ const store = createXRStore({
   foveation: 0.3,
 });
 
-export type NodesPosition = {
-  left: NodeMesh;
-  center: NodeMesh;
-  right: NodeMesh;
-};
-
 export default function App() {
-  const [nodes, setNodes] = useState<NodeMesh[]>([]);
-  const [links, setLinks] = useState<LinkMesh[]>([]);
-  const [currentNode, setCurrentNode] = useState<NodeMesh | null>(null);
+  const [nodes, setNodes] = useState<NodeMesh[] | null>(null);
+  const [links, setLinks] = useState<LinkMesh[] | null>(null);
+  const [currentNode, setCurrentNode] = useState(null);
 
-  const [nodePositions, setNodePositions] = useState<number[]>([0, 1, 2]); // Indices into positions array
-
-  const positions = {
-    center: toPosition({ positionOut: 1 }),
-    left: toPosition({ positionLeft: 4 }),
-    right: toPosition({ positionRight: 4 }),
-  };
-
-  const rotations = {
-    center: toRotation({}),
-    left: toRotation({ rotationYInDeg: 30 }),
-    right: toRotation({ rotationYInDeg: -30 }),
-  };
+  const [simulationNodes, setSimulationNodes] = useState<NodeMesh[] | null>(
+    null
+  );
+  const [simulationLinks, setSimulationLinks] = useState<LinkMesh[] | null>(
+    null
+  );
 
   useEffect(() => {
-    let data = JSON.parse(JSON.stringify(jsonData)) as {
-      nodes: NodeMesh[];
-      links: LinkMesh[];
-    };
+    const data = JSON.parse(JSON.stringify(jsonData));
 
     setNodes(data.nodes);
     setLinks(data.links);
@@ -66,36 +45,59 @@ export default function App() {
     }
   }, []);
 
-  const onInteraction = useCallback((nodeClicked: "left" | "right") => {
-    setNodePositions((prevPositions) => {
-      let newPositions = [...prevPositions];
-      if (nodeClicked === "left") {
-        newPositions = [prevPositions[1], prevPositions[2], prevPositions[0]];
-      } else if (nodeClicked === "right") {
-        newPositions = [prevPositions[2], prevPositions[0], prevPositions[1]];
-      }
-      return newPositions;
-    });
-  }, []);
+  useEffect(() => {
+    if (!currentNode || !nodes || !links) {
+      return undefined;
+    }
 
-  const connectedNodes = getConnectedNodes({
-    links,
-    currentNode,
-    nodes,
-  });
+    const connectedNodes = getConnectedNodes({
+      links,
+      currentNode,
+      nodes,
+    });
+
+    const simulationDataNodes = [currentNode, ...connectedNodes];
+    const simulationDataLinks = links.filter(
+      (link) =>
+        simulationDataNodes.find((node) => node.id === link.source) &&
+        simulationDataNodes.find((node) => node.id === link.target)
+    );
+
+    const simulation = forceSimulation(simulationDataNodes)
+      .force(
+        "link",
+        forceLink(simulationDataLinks)
+          .id((d) => d.id)
+          .distance((d) => {
+            // You can adjust the distance based on the weight
+            // For example, stronger weights bring nodes closer
+            return 10 + 2 * d.weight;
+          })
+      )
+      .force("charge", forceManyBody().strength(-10)) // Repulsion between nodes
+      .force("center", forceCenter(0, 0));
+
+    // console.log("simulation", simulation);
+    // Run the simulation
+    simulation.on("tick", () => {
+      // Update the nodes positions
+      setSimulationNodes([...simulationDataNodes]);
+      setSimulationLinks([...simulationDataLinks]);
+    });
+
+    // Stop the simulation after it's stabilized
+    setTimeout(() => {
+      simulation.stop();
+    }, 300);
+
+    // Cleanup the simulation on unmount
+    return () => {
+      simulation.stop();
+    };
+  }, [currentNode, nodes, links]);
 
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-        position: "relative",
-      }}
-    >
-      {/* <pre>{JSON.stringify(connectedNodesIds, null, 2)}</pre>
-      <pre>{JSON.stringify(connectedNodes, null, 2)}</pre> */}
-      <pre>{JSON.stringify(currentNode, null, 2)}</pre>
-
+    <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <button
         onClick={() => store.enterAR()}
         style={{
@@ -109,8 +111,9 @@ export default function App() {
         Enter AR
       </button>
 
+      {/* <pre>{JSON.stringify(simulationLinks, null, 2)}</pre> */}
+
       <Canvas
-        camera={{ position: [0, 0, 200], fov: 75 }}
         style={{
           height: "50vh",
           width: "50vw",
@@ -120,48 +123,51 @@ export default function App() {
           <OrbitControls />
           <Environment files="/studio.hdr" background />
 
-          <group
-            scale={0.7}
-            position={toPosition({
-              positionIn: 5,
-              positionTop: 1.5,
-            })}
-          >
-            {currentNode && (
-              <>
+          {/* <mesh>
+            <boxGeometry args={[1, 1, 1]} />
+            <meshBasicMaterial color="blue" />
+          </mesh> */}
+
+          <group position={[0, 0, 0]}>
+            {simulationNodes &&
+              simulationNodes.map((node, index) => (
                 <Node
-                  key={currentNode.id}
-                  node={currentNode}
-                  position={positions.center}
-                  rotation={rotations.center}
+                  key={node.id}
+                  node={node}
+                  position={[node.x ?? 0, node.y ?? 0, -10 + index * 2]}
+                  onClick={() => {
+                    console.log(`clicking node: ${node.name}`);
+                    setCurrentNode(node);
+                  }}
                 />
+              ))}
 
-                {connectedNodes.map((node, index) => {
-                  const angle = (index / connectedNodes.length) * Math.PI * 2;
-                  const position = [
-                    Math.cos(angle) * 4, // Radius from the center
-                    0,
-                    Math.sin(angle) * 4,
-                  ];
-                  const rotation = [0, angle, 0];
-
+            {/* {simulationLinks &&
+              simulationLinks.map((link, index) => {
+                const sourceNode = simulationNodes.find(
+                  (node) => node.id === link.source
+                );
+                const targetNode = simulationNodes.find(
+                  (node) => node.id === link.target
+                );
+                if (sourceNode && targetNode) {
                   return (
-                    <Node
-                      key={node.id}
-                      node={node}
-                      position={position}
-                      rotation={rotation}
-                      onClick={() => setCurrentNode(node)}
+                    <Line
+                      key={index}
+                      points={[
+                        [sourceNode.x, sourceNode.y, sourceNode.z || 0],
+                        [targetNode.x, targetNode.y, targetNode.z || 0],
+                      ]}
+                      color="gray"
+                      lineWidth={1}
                     />
                   );
-                })}
-              </>
-            )}
+                }
+                return null;
+              })} */}
           </group>
         </XR>
       </Canvas>
-
-      {/* <Stats /> */}
     </div>
   );
 }

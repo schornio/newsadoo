@@ -1,6 +1,5 @@
-import { animated, useSpring } from "@react-spring/three";
 import { Image, RoundedBox, Text } from "@react-three/drei";
-import { useState } from "react";
+// import { useState } from "react";
 import { NodeMesh } from "../types";
 import { toSize } from "../utils/toSize";
 import { toGoldenRatio } from "../utils/toGoldenRatio";
@@ -26,24 +25,13 @@ export function Node({
   position: [number, number, number];
   rotation?: [number, number, number];
 }) {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
 
-  const style = useSpring({
-    position: [position[0], position[1] + (isHovered ? 0.2 : 0), position[2]],
-    rotation,
-    config: { mass: 1, tension: 170, friction: 26, precision: 0.0001 },
-  });
-
+  // console.log("node", node);
+  // console.log("position", position);
+  // console.log("rotation", rotation);
   return (
-    <animated.group
-      // @ts-expect-error - Ignoring TS error due to type incompatibility with SpringValue<number[]> for scale and rotation properties
-      position={style.position}
-      // @ts-expect-error - Ignoring TS error due to type incompatibility with SpringValue<number[]> for scale and rotation properties
-      rotation={style.rotation}
-      onClick={onClick}
-      onPointerEnter={() => setIsHovered(true)}
-      onPointerLeave={() => setIsHovered(false)}
-    >
+    <group position={position} rotation={rotation} onClick={onClick}>
       <RoundedBox
         args={toSize({
           sizeDepth: CARD_DEPTH,
@@ -84,6 +72,6 @@ export function Node({
       >
         {node.name}
       </Text>
-    </animated.group>
+    </group>
   );
 }
