@@ -25,7 +25,7 @@ const store = createXRStore({
 export default function App() {
   const [nodes, setNodes] = useState<NodeMesh[] | null>(null);
   const [links, setLinks] = useState<LinkMesh[] | null>(null);
-  const [currentNode, setCurrentNode] = useState(null);
+  const [currentNode, setCurrentNode] = useState<NodeMesh | null>(null);
 
   const [simulationNodes, setSimulationNodes] = useState<NodeMesh[] | null>(
     null
@@ -67,25 +67,19 @@ export default function App() {
       .force(
         "link",
         forceLink(simulationDataLinks)
-          .id((d) => d.id)
+          .id((d: LinkMesh) => d.id)
           .distance((d) => {
-            // You can adjust the distance based on the weight
-            // For example, stronger weights bring nodes closer
             return 10 + 2 * d.weight;
           })
       )
-      .force("charge", forceManyBody().strength(-10)) // Repulsion between nodes
+      .force("charge", forceManyBody().strength(50))
       .force("center", forceCenter(0, 0));
 
-    // console.log("simulation", simulation);
-    // Run the simulation
     simulation.on("tick", () => {
-      // Update the nodes positions
       setSimulationNodes([...simulationDataNodes]);
       setSimulationLinks([...simulationDataLinks]);
     });
 
-    // Stop the simulation after it's stabilized
     setTimeout(() => {
       simulation.stop();
     }, 300);
@@ -121,12 +115,14 @@ export default function App() {
       >
         <XR store={store}>
           <OrbitControls />
-          <Environment files="/studio.hdr" background />
 
           {/* <mesh>
             <boxGeometry args={[1, 1, 1]} />
             <meshBasicMaterial color="blue" />
           </mesh> */}
+
+          <ambientLight intensity={1} />
+          <directionalLight position={[10, 10, 5]} intensity={1} />
 
           <group position={[0, 0, 0]}>
             {simulationNodes &&
@@ -144,22 +140,19 @@ export default function App() {
 
             {/* {simulationLinks &&
               simulationLinks.map((link, index) => {
-                const sourceNode = simulationNodes.find(
+                const sourceNode = simulationNodes?.find(
                   (node) => node.id === link.source
                 );
-                const targetNode = simulationNodes.find(
+                const targetNode = simulationNodes?.find(
                   (node) => node.id === link.target
                 );
                 if (sourceNode && targetNode) {
                   return (
                     <Line
                       key={index}
-                      points={[
-                        [sourceNode.x, sourceNode.y, sourceNode.z || 0],
-                        [targetNode.x, targetNode.y, targetNode.z || 0],
-                      ]}
+                      points={[10,10,10]}
                       color="gray"
-                      lineWidth={1}
+                      lineWidth={10}
                     />
                   );
                 }
