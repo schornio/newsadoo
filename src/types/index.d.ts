@@ -18,7 +18,8 @@ export type NodeMesh = {
   tag_type: TagEnum;
   val: number;
   level: number;
-  normalizedVal: number; // to see if we keep it
-  color: string; // to see if we keep it
+  // normalizedVal: number; // to see if we keep it
+  // color: string; // to see if we keep it
   position: [number, number, number];
+  image: string;
 };

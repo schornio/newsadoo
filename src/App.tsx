@@ -15,6 +15,7 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import { XR } from "@react-three/xr";
 import { useCallback } from "react";
 import { Node } from "./components/Node";
+import { toRotation } from "./utils/toRotation";
 
 const store = createXRStore({
   hand: {
@@ -39,9 +40,14 @@ export default function App() {
   );
 
   const positions = {
-    left: toPosition({ positionLeft: 5 }),
-    center: toPosition({ positionOut: 2 }),
-    right: toPosition({ positionRight: 5 }),
+    left: toPosition({ positionLeft: 4 }),
+    center: toPosition({ positionOut: 1 }),
+    right: toPosition({ positionRight: 4 }),
+  };
+
+  const rotations = {
+    left: toRotation({ rotationYInRad: Math.PI / 2 }),
+    right: toRotation({ rotationYInRad: -Math.PI / 2 }),
   };
 
   useEffect(() => {
@@ -145,7 +151,7 @@ export default function App() {
       >
         <XR store={store}>
           <OrbitControls />
-          <Environment preset="sunset" />
+          <Environment preset="studio" background />
 
           <group
             scale={0.7}
@@ -163,6 +169,7 @@ export default function App() {
                   node={nodesPosition.left}
                   onClick={() => onInteraction("left")}
                   position={positions.left}
+                  rotation={toRotation({ rotationYInDeg: 30 })}
                 />
 
                 <Node node={nodesPosition.center} position={positions.center} />
@@ -171,6 +178,7 @@ export default function App() {
                   node={nodesPosition.right}
                   onClick={() => onInteraction("right")}
                   position={positions.right}
+                  rotation={toRotation({ rotationYInDeg: -30 })}
                 />
               </group>
             )}
