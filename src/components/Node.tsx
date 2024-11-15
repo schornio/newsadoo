@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardTitle } from "./default/card";
 import { toSize } from "../utils/toSize";
 import { toGoldenRatio } from "../utils/toGoldenRatio";
 import { toRotation } from "../utils/toRotation";
+import { useState } from "react";
 
 /* 
 {
@@ -34,8 +35,14 @@ export function Node({
   position: [number, number, number];
   rotation?: [number, number, number];
 }) {
+  const [isHovered, setIsHovered] = useState(false);
+
   const { animatedPosition } = useSpring({
-    animatedPosition: position,
+    animatedPosition: [
+      position[0],
+      position[1] + (isHovered ? 0.2 : 0),
+      position[2],
+    ],
     config: { mass: 1, tension: 170, friction: 26, precision: 0.0001 },
     rotation: rotation,
   });
@@ -47,6 +54,8 @@ export function Node({
       position={animatedPosition}
       onClick={onClick}
       rotation={rotation}
+      onPointerEnter={() => setIsHovered(true)}
+      onPointerLeave={() => setIsHovered(false)}
     >
       <RoundedBox
         args={toSize({
