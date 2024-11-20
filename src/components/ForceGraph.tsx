@@ -11,6 +11,11 @@ import {
 import { Node } from "./Node";
 import { Line } from "@react-three/drei";
 
+/**
+ * We tried going to a higher level with three-forcegraph, however, there are many issues that appear with its rendering and react-three-fiber
+ * This, as a consequence, makes it difficult to mantain and develop further the application.
+ * Let's try going to a lower level, with d3-force and build from there
+ */
 export function ForceGraph() {
   const [nodes, setNodes] = useState<NodeMesh[] | null>(null);
   const [links, setLinks] = useState<LinkMesh[] | null>(null);
@@ -37,23 +42,23 @@ export function ForceGraph() {
       return undefined;
     }
 
-    const connectedNodes = getConnectedNodes({
-      links,
-      currentNode,
-      nodes,
-    });
+    // const connectedNodes = getConnectedNodes({
+    //   links,
+    //   currentNode,
+    //   nodes,
+    // });
 
-    const simulationDataNodes = [currentNode, ...connectedNodes];
-    const simulationDataLinks = links.filter(
-      (link) =>
-        simulationDataNodes.find((node) => node.id === link.source) &&
-        simulationDataNodes.find((node) => node.id === link.target)
-    );
+    // const simulationDataNodes = [currentNode, ...connectedNodes];
+    // const simulationDataLinks = links.filter(
+    //   (link) =>
+    //     simulationDataNodes.find((node) => node.id === link.source) &&
+    //     simulationDataNodes.find((node) => node.id === link.target)
+    // );
 
-    const simulation = forceSimulation(simulationDataNodes)
+    const simulation = forceSimulation(nodes)
       .force(
         "link",
-        forceLink(simulationDataLinks)
+        forceLink(links)
           .id((d) => d.id)
           .distance((d) => 10 + 2 * d.weight)
       )
@@ -61,8 +66,8 @@ export function ForceGraph() {
       .force("center", forceCenter(0, 0));
 
     simulation.on("tick", () => {
-      setSimulationNodes([...simulationDataNodes]);
-      setSimulationLinks([...simulationDataLinks]);
+      setSimulationNodes([...nodes]);
+      setSimulationLinks([...links]);
     });
 
     setTimeout(() => simulation.stop(), 300);

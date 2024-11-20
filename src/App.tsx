@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { createXRStore, XR } from "@react-three/xr";
 import { ForceGraph } from "./components/ForceGraph";
+import { ForceGraph2 } from "./components/ForceGraph2";
 
 const store = createXRStore({
   hand: {
@@ -40,7 +41,8 @@ export default function App() {
           <ambientLight intensity={1} />
           <directionalLight position={[10, 10, 5]} intensity={1} />
 
-          <ForceGraph />
+          {/* <ForceGraph /> */}
+          <ForceGraph2 />
         </XR>
       </Canvas>
     </div>
