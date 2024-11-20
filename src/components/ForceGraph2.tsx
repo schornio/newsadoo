@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from "react";
 import * as d3 from "d3-force";
 import * as THREE from "three";
 import data from "../../assets/new_data.json";
+import { getNodeSize } from "../utils/getNodeSize";
+import { Line } from "@react-three/drei";
 
 type NodeMesh = {
   id: number;
@@ -31,7 +33,7 @@ export function ForceGraph2() {
   useEffect(() => {
     const nodes = data.nodes.map((n) => ({
       ...n,
-      z: Math.random() * 50,
+      z: Math.random() * 200,
     }));
     const links = data.links.map((l) => ({ ...l }));
 
@@ -68,30 +70,30 @@ export function ForceGraph2() {
   return (
     <group scale={0.01}>
       {graph?.links.map((link, idx) => (
-        <line
-          key={new Date().getTime() + idx}
-          geometry={new THREE.BufferGeometry().setFromPoints([
-            new THREE.Vector3(
-              link.source.x || 0,
-              link.source.y || 0,
-              link.source.z || 0
-            ),
-            new THREE.Vector3(
-              link.target.x || 0,
-              link.target.y || 0,
-              link.target.z || 0
-            ),
-          ])}
-          material={new THREE.LineBasicMaterial({ color: "gray" })}
+        <Line
+          key={idx}
+          points={[
+            [link.source.x || 0, link.source.y || 0, link.source.z || 0],
+            [link.target.x || 0, link.target.y || 0, link.target.z || 0],
+          ]}
+          color="gray"
+          lineWidth={0.3} // Optional, can customize line width
         />
       ))}
 
-      {graph?.nodes.map((node) => (
-        <mesh key={node.id} position={[node.x || 0, node.y || 0, node.z || 0]}>
-          <sphereGeometry args={[node.val / 1000, 32, 32]} />
-          <meshStandardMaterial color="orange" />
-        </mesh>
-      ))}
+      {graph?.nodes.map((node) => {
+        console.log("node.val", node.val);
+
+        return (
+          <mesh
+            key={node.id}
+            position={[node.x || 0, node.y || 0, node.z || 0]}
+          >
+            <sphereGeometry args={[getNodeSize(node.val), 32, 32]} />
+            <meshStandardMaterial color="white" />
+          </mesh>
+        );
+      })}
     </group>
   );
 }

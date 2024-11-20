@@ -31,8 +31,8 @@ export default function App() {
 
       <Canvas
         style={{
-          height: "50vh",
-          width: "50vw",
+          height: "100vh",
+          width: "100vw",
         }}
       >
         <XR store={store}>
