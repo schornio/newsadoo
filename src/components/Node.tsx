@@ -5,6 +5,7 @@ import { toSize } from "../utils/toSize";
 import { toGoldenRatio } from "../utils/toGoldenRatio";
 import { toRotation } from "../utils/toRotation";
 import { toPosition } from "../utils/toPosition";
+import { useState } from "react";
 
 const CARD_DEPTH = 0.1;
 const CARD_HEIGHT = 2.5;
@@ -16,22 +17,38 @@ const IMAGE_PLACEHOLDER =
 
 export function Node({
   node,
-  onClick,
+  onDrag,
   position,
   rotation,
 }: {
   node: NodeMesh;
-  onClick?: () => void;
+  onDrag?: (nodeId: number, x: number, y: number) => void;
   position: [number, number, number];
   rotation?: [number, number, number];
 }) {
-  // const [isHovered, setIsHovered] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
 
-  // console.log("node", node);
-  // console.log("position", position);
-  // console.log("rotation", rotation);
   return (
-    <group position={position} rotation={rotation} onClick={onClick}>
+    <group
+      position={position}
+      rotation={rotation}
+      onPointerDown={(e) => {
+        e.stopPropagation();
+
+        setIsDragging(true);
+      }}
+      onPointerMove={(e) => {
+        if (isDragging) {
+          e.stopPropagation();
+          onDrag?.(node.id, e.unprojectedPoint.x, e.unprojectedPoint.y);
+        }
+      }}
+      onPointerUp={(e) => {
+        e.stopPropagation();
+
+        setIsDragging(false);
+      }}
+    >
       <RoundedBox
         args={toSize({
           sizeDepth: CARD_DEPTH,

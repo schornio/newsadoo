@@ -2,12 +2,11 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { createXRStore, XR } from "@react-three/xr";
 import { ForceGraph } from "./components/ForceGraph";
-import { ForceGraph2 } from "./components/ForceGraph2";
 
 const store = createXRStore({
   hand: {
     rayPointer: {
-      rayModel: { maxLength: 100, opacity: 0.02 },
+      rayModel: { maxLength: 200, opacity: 0.02 },
     },
   },
   foveation: 0.3,
@@ -17,7 +16,7 @@ export default function App() {
   return (
     <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <button
-        onClick={() => store.enterAR()}
+        onClick={() => store.enterVR()}
         style={{
           position: "absolute",
           bottom: "5%",
@@ -26,7 +25,7 @@ export default function App() {
           zIndex: 10,
         }}
       >
-        Enter AR
+        Enter VR
       </button>
 
       <Canvas
@@ -36,13 +35,12 @@ export default function App() {
         }}
       >
         <XR store={store}>
-          <OrbitControls />
+          {/* <OrbitControls /> */}
 
           <ambientLight intensity={1} />
           <directionalLight position={[10, 10, 5]} intensity={1} />
 
-          {/* <ForceGraph /> */}
-          <ForceGraph2 />
+          <ForceGraph />
         </XR>
       </Canvas>
     </div>
