@@ -1,29 +1,20 @@
-import { LinkMesh, NodeMesh } from "../types";
+import { Line } from "@react-three/drei";
+import { LinkMesh } from "../types";
+import { isNodeMesh } from "../utils/isNodeMesh";
+import { getLinkColor } from "../utils/getLinkColor";
 
-export function Link({ link }: { link: LinkMesh }) {
-  const sourceNode = link.source as NodeMesh;
-  const targetNode = link.target as NodeMesh;
-
-  // const positions = new Float32Array([
-  //   sourceNode.position[0],
-  //   sourceNode.position[1],
-  //   sourceNode.position[2],
-  //   targetNode.position[0],
-  //   targetNode.position[1],
-  //   targetNode.position[2],
-  // ]);
+export function GraphLink({ link }: { link: LinkMesh }) {
+  const source = isNodeMesh(link.source) ? link.source : null;
+  const target = isNodeMesh(link.target) ? link.target : null;
 
   return (
-    <line>
-      <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          // array={positions}
-          itemSize={3}
-          count={2}
-        />
-      </bufferGeometry>
-      <lineBasicMaterial color={link.color || "gray"} />
-    </line>
+    <Line
+      points={[
+        [source?.x || 0, source?.y || 0, source?.z || 0],
+        [target?.x || 0, target?.y || 0, target?.z || 0],
+      ]}
+      color={getLinkColor(link.weight)}
+      lineWidth={0.3}
+    />
   );
 }
