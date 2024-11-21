@@ -8,9 +8,10 @@ import {
   forceLink,
   forceManyBody,
   forceSimulation,
+  Simulation,
 } from "d3-force";
-import { drag } from "d3-drag";
-import { selectAll } from "d3-selection";
+// import { drag } from "d3-drag"; // uses DOM. We're in canvas territory. So, we can't use this.
+// import { selectAll } from "d3-selection";
 
 type GraphData = {
   nodes: NodeMesh[];
@@ -23,8 +24,8 @@ type GraphData = {
  */
 export function ForceGraph() {
   const [graph, setGraph] = useState<GraphData | null>(null);
-  const graphRef = useRef<GraphData>({ nodes: [], links: [] });
-=
+  const simulationRef = useRef<Simulation<NodeMesh, LinkMesh> | null>(null);
+
   useEffect(() => {
     const nodes: NodeMesh[] = data.nodes.map((n) => ({
       ...n,
@@ -32,9 +33,6 @@ export function ForceGraph() {
       z: Math.random() * 1000,
     }));
     const links: LinkMesh[] = data.links.map((l) => ({ ...l }));
-
-    graphRef.current = { nodes, links };
-    setGraph(graphRef.current);
 
     const simulation = forceSimulation(nodes)
       .force(
@@ -47,11 +45,14 @@ export function ForceGraph() {
       .force("center", forceCenter(0, 0))
       .force("z", forceManyBody().strength(-10))
       .on("tick", () => {
-        if (graphRef.current) {
-          graphRef.current.nodes = nodes.map((n) => ({ ...n }));
-          graphRef.current.links = links.map((l) => ({ ...l }));
-        }
+        // if (graphRef.current) {
+        //   graphRef.current.nodes = nodes.map((n) => ({ ...n }));
+        //   graphRef.current.links = links.map((l) => ({ ...l }));
+        // }
+        setGraph({ nodes: [...nodes], links: [...links] });
       });
+
+    simulationRef.current = simulation;
 
     return () => {
       simulation.stop();
@@ -59,19 +60,19 @@ export function ForceGraph() {
   }, []);
 
   const updateNodePosition = (nodeId: number, x: number, y: number) => {
-    console.log("nodeId", nodeId);
-    if (!graphRef.current) {
+    if (!simulationRef.current) {
       return;
     }
 
-    const node = graphRef.current.nodes.find((n) => n.id === nodeId);
+    // in d3-foce, the nodes property is a function that returns the array of nodes, not a property that holds the array directly
+    // we need to call .nodes()
+    const node = simulationRef.current.nodes().find((n) => n.id === nodeId);
 
     if (node) {
       node.fx = x;
       node.fy = y;
-      graphRef.current.alphaTarget(0.3).restart();
+      simulationRef.current.alphaTarget(0.3).restart();
     }
-    console.log("node", node);
   };
 
   return (

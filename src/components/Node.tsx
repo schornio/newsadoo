@@ -35,12 +35,14 @@ export function Node({
       onPointerDown={(e) => {
         e.stopPropagation();
 
+        console.log("clicked");
+
         setIsDragging(true);
       }}
       onPointerMove={(e) => {
         if (isDragging) {
           e.stopPropagation();
-          onDrag?.(node.id, e.unprojectedPoint.x, e.unprojectedPoint.y);
+          onDrag?.(node.id, e.point.x, e.point.y);
         }
       }}
       onPointerUp={(e) => {
