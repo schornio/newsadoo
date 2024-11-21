@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href="./libs/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="https://newsadoo.com/favicon.png" />
+</head>
+  
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <h1 class="col-4">Point in time</h1>
+  
+            <!-- File upload & settings form -->
+            <form class="col-8 mb-0 me-auto" id="setup-form">
+              <div class="row align-items-center">
+                <div class="col-5 me-1">
+                  <div class="row py-1">
+                    <div class="col-6">
+                      <input type="radio" class="btn-check" name="node-mode" id="node-bubbles" autocomplete="off" checked />
+                      <label class="btn" for="node-bubbles">Bubbles</label>
+                    </div>
+  
+                    <div class="col-6">
+                      <input type="radio" class="btn-check" name="node-mode" id="node-text" autocomplete="off" />
+                      <label class="btn" for="node-text">Text</label>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-6">
+                  <div class="row py-1">
+                    <div class="col-12">
+                      <input type="file" class="form-control" id="file-input" />
+                    </div>
+                  </div>
+                  <div class="row py-1 justify-content-center">
+                    <button type="submit" class="btn btn-primary col-4" id="submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>    
+    <div id="3d-graph"></div>
+
+    <script src="libs/three.js"></script>
+    <script src="libs/three-spritetext.min.js"></script>
+    <script src="libs/3d-force-graph.min.js"></script>
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="./graph.js"></script>
+</body>

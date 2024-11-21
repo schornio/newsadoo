@@ -1,0 +1,51 @@
+{
+  "nodes": [
+    {
+      "id": 442242,
+      "name": "Oscar Piastri",
+      "tag_timeline": "https://newsadoo.com/de/tag/442242/timeline",
+      "tag_type": "PER",
+      "val": 1983,
+      "level": 0,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Oscar_Piastri.png/100px-Oscar_Piastri.png"
+    },
+    {
+      "id": 78503,
+      "name": "Lando Norris",
+      "tag_timeline": "https://newsadoo.com/de/tag/78503/timeline",
+      "tag_type": "PER",
+      "val": 2960,
+      "level": 0,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg/100px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg"
+    },
+    {
+      "id": 56879,
+      "name": "McLaren Racing",
+      "tag_timeline": "https://newsadoo.com/de/tag/56879/timeline",
+      "tag_type": "ORG",
+      "val": 3242,
+      "level": 0,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg/100px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg"
+    }
+  ],
+  "links": [
+    {
+      "source": 442242,
+      "target": 78503,
+      "weight": 0.7491510917168515,
+      "root": 442242
+    },
+    {
+      "source": 442242,
+      "target": 56879,
+      "weight": 0.6819101124686274,
+      "root": 442242
+    },
+    {
+      "source": 78503,
+      "target": 56879,
+      "weight": 0.7782960916916076,
+      "root": 78503
+    }
+  ]
+}

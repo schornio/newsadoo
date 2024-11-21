@@ -1,0 +1,3084 @@
+{
+    "nodes": [
+        {
+            "id": 56002,
+            "name": "SK Rapid Wien",
+            "val": 15274,
+            "level": 0
+        },
+        {
+            "id": 83024,
+            "name": "Dietmar K\u00fchbauer",
+            "val": 2600,
+            "level": 1
+        },
+        {
+            "id": 57556,
+            "name": "LASK",
+            "val": 11187,
+            "level": 0
+        },
+        {
+            "id": 310222,
+            "name": "H\u00fctteldorf",
+            "val": 1788,
+            "level": 1
+        },
+        {
+            "id": 62874,
+            "name": "SK Sturm Graz",
+            "val": 7493,
+            "level": 0
+        },
+        {
+            "id": 142968,
+            "name": "Ferdinand Feldhofer",
+            "val": 2271,
+            "level": 1
+        },
+        {
+            "id": 473607,
+            "name": "Ercan Kara",
+            "val": 1391,
+            "level": 2
+        },
+        {
+            "id": 183112,
+            "name": "Christoph Knasm\u00fcllner",
+            "val": 641,
+            "level": 2
+        },
+        {
+            "id": 317360,
+            "name": "Allianz Stadion",
+            "val": 963,
+            "level": 2
+        },
+        {
+            "id": 69244,
+            "name": "WSG Tirol",
+            "val": 5048,
+            "level": 0
+        },
+        {
+            "id": 115298,
+            "name": "Peter Michorl",
+            "val": 1041,
+            "level": 1
+        },
+        {
+            "id": 83694,
+            "name": "Dominik Thalhammer",
+            "val": 1138,
+            "level": 1
+        },
+        {
+            "id": 275061,
+            "name": "Zoran Bari\u0161i\u0107",
+            "val": 1093,
+            "level": 2
+        },
+        {
+            "id": 600935,
+            "name": "Marco Gr\u00fcll",
+            "val": 1325,
+            "level": 2
+        },
+        {
+            "id": 126001,
+            "name": "Christian Ilzer",
+            "val": 1868,
+            "level": 1
+        },
+        {
+            "id": 108332,
+            "name": "Jakob Jantscher",
+            "val": 1227,
+            "level": 1
+        },
+        {
+            "id": 119284,
+            "name": "J\u00f6rg Siebenhandl",
+            "val": 908,
+            "level": 1
+        },
+        {
+            "id": 176038,
+            "name": "Michael Liendl",
+            "val": 1504,
+            "level": 1
+        },
+        {
+            "id": 94448,
+            "name": "Wiener AC",
+            "val": 4088,
+            "level": 1
+        },
+        {
+            "id": 81266437,
+            "name": "Niklas Hedl",
+            "val": 172,
+            "level": 2
+        },
+        {
+            "id": 463769,
+            "name": "Ferdy Druijf",
+            "val": 207,
+            "level": 2
+        },
+        {
+            "id": 94853,
+            "name": "SK Austria Klagenfurt (2007)",
+            "val": 327,
+            "level": 0
+        },
+        {
+            "id": 126358,
+            "name": "Peter Pacult",
+            "val": 1237,
+            "level": 1
+        },
+        {
+            "id": 261738,
+            "name": "Christopher Cvetko",
+            "val": 380,
+            "level": 1
+        },
+        {
+            "id": 106996,
+            "name": "Thorsten Mahrer",
+            "val": 369,
+            "level": 1
+        },
+        {
+            "id": 351220,
+            "name": "Florian Jaritz",
+            "val": 225,
+            "level": 1
+        },
+        {
+            "id": 232009,
+            "name": "Darijo Pecirep",
+            "val": 148,
+            "level": 1
+        },
+        {
+            "id": 76554,
+            "name": "FC K\u00e4rnten",
+            "val": 3184,
+            "level": 2
+        },
+        {
+            "id": 232772,
+            "name": "Markus Pink",
+            "val": 386,
+            "level": 2
+        },
+        {
+            "id": 70937469,
+            "name": "Patrick Greil",
+            "val": 445,
+            "level": 2
+        },
+        {
+            "id": 232010,
+            "name": "Oliver Markoutz",
+            "val": 53,
+            "level": 2
+        },
+        {
+            "id": 68108,
+            "name": "SCR Altach",
+            "val": 3464,
+            "level": 0
+        },
+        {
+            "id": 298746,
+            "name": "Altach",
+            "val": 3154,
+            "level": 1
+        },
+        {
+            "id": 71234,
+            "name": "SV Ried",
+            "val": 4674,
+            "level": 1
+        },
+        {
+            "id": 129808,
+            "name": "Damir Canadi",
+            "val": 581,
+            "level": 1
+        },
+        {
+            "id": 88432,
+            "name": "SK Admira Wien",
+            "val": 3486,
+            "level": 1
+        },
+        {
+            "id": 59494,
+            "name": "Ludovic Magnin",
+            "val": 640,
+            "level": 2
+        },
+        {
+            "id": 798813,
+            "name": "Christoph L\u00e4ngle",
+            "val": 121,
+            "level": 2
+        },
+        {
+            "id": 110308,
+            "name": "Jan Zwischenbrugger",
+            "val": 215,
+            "level": 2
+        },
+        {
+            "id": 166899,
+            "name": "Andreas Heraf",
+            "val": 785,
+            "level": 2
+        },
+        {
+            "id": 273344,
+            "name": "Hartberg",
+            "val": 6276,
+            "level": 1
+        },
+        {
+            "id": 129807,
+            "name": "Atromitos Athen",
+            "val": 155,
+            "level": 2
+        },
+        {
+            "id": 221032,
+            "name": "Martin Kobras",
+            "val": 88,
+            "level": 2
+        },
+        {
+            "id": 210995,
+            "name": "Marco Meilinger",
+            "val": 118,
+            "level": 2
+        },
+        {
+            "id": 274295,
+            "name": "Thomas Silberberger",
+            "val": 1205,
+            "level": 1
+        },
+        {
+            "id": 283384,
+            "name": "Raffael Behounek",
+            "val": 382,
+            "level": 1
+        },
+        {
+            "id": 77519,
+            "name": "FC Blau-Wei\u00df Linz",
+            "val": 1352,
+            "level": 0
+        },
+        {
+            "id": 70963690,
+            "name": "Gerald Scheiblehner",
+            "val": 111,
+            "level": 1
+        },
+        {
+            "id": 301586,
+            "name": "Fabian Schubert",
+            "val": 401,
+            "level": 1
+        },
+        {
+            "id": 118395,
+            "name": "SK Vorw\u00e4rts Steyr",
+            "val": 1013,
+            "level": 1
+        },
+        {
+            "id": 93939,
+            "name": "Raphael Dwamena",
+            "val": 170,
+            "level": 1
+        },
+        {
+            "id": 112425,
+            "name": "Floridsdorfer AC",
+            "val": 1314,
+            "level": 1
+        },
+        {
+            "id": 70961569,
+            "name": "Daniel Madlener",
+            "val": 167,
+            "level": 2
+        },
+        {
+            "id": 82445655,
+            "name": "Fabian Windhager",
+            "val": 3,
+            "level": 2
+        },
+        {
+            "id": 713847,
+            "name": "Bernhard Janeczek",
+            "val": 24,
+            "level": 2
+        },
+        {
+            "id": 81929755,
+            "name": "Nicolas Schmid",
+            "val": 10,
+            "level": 2
+        },
+        {
+            "id": 81212847,
+            "name": "Julian von Moos",
+            "val": 49,
+            "level": 2
+        },
+        {
+            "id": 82759716,
+            "name": "Daouda Guindo",
+            "val": 47,
+            "level": 2
+        },
+        {
+            "id": 332145,
+            "name": "Anouar El Moukhantir",
+            "val": 35,
+            "level": 2
+        },
+        {
+            "id": 474056,
+            "name": "2. Fu\u00dfball-Liga (Slowakei)",
+            "val": 341,
+            "level": 2
+        },
+        {
+            "id": 596158,
+            "name": "Young Violets Austria Wien",
+            "val": 844,
+            "level": 1
+        },
+        {
+            "id": 83025,
+            "name": "Grazer AK",
+            "val": 1545,
+            "level": 2
+        },
+        {
+            "id": 71187132,
+            "name": "Patrick Plojer",
+            "val": 13,
+            "level": 2
+        },
+        {
+            "id": 510243,
+            "name": "Med Campus III",
+            "val": 138,
+            "level": 2
+        },
+        {
+            "id": 111840,
+            "name": "Real Saragossa",
+            "val": 220,
+            "level": 2
+        },
+        {
+            "id": 160544,
+            "name": "Simon Pirkl",
+            "val": 45,
+            "level": 2
+        },
+        {
+            "id": 57558,
+            "name": "SC Austria Lustenau",
+            "val": 1544,
+            "level": 0
+        },
+        {
+            "id": 333436,
+            "name": "Lafnitz (Steiermark)",
+            "val": 1171,
+            "level": 2
+        },
+        {
+            "id": 142384,
+            "name": "SV Horn",
+            "val": 879,
+            "level": 2
+        },
+        {
+            "id": 54546,
+            "name": "FC Red Bull Salzburg",
+            "val": 24393,
+            "level": 0
+        },
+        {
+            "id": 80561,
+            "name": "Karim Adeyemi",
+            "val": 8200,
+            "level": 1
+        },
+        {
+            "id": 402685,
+            "name": "Matthias Jaissle",
+            "val": 2563,
+            "level": 1
+        },
+        {
+            "id": 298819,
+            "name": "Salzburg",
+            "val": 63808,
+            "level": 1
+        },
+        {
+            "id": 232581,
+            "name": "Noah Okafor",
+            "val": 1808,
+            "level": 1
+        },
+        {
+            "id": 54974,
+            "name": "FC Bayern M\u00fcnchen",
+            "val": 216716,
+            "level": 1
+        },
+        {
+            "id": 666421,
+            "name": "Nico Schlotterbeck",
+            "val": 7347,
+            "level": 2
+        },
+        {
+            "id": 56665,
+            "name": "Niklas S\u00fcle",
+            "val": 19647,
+            "level": 2
+        },
+        {
+            "id": 842112,
+            "name": "Philipp K\u00f6hn",
+            "val": 510,
+            "level": 2
+        },
+        {
+            "id": 80771,
+            "name": "Maximilian W\u00f6ber",
+            "val": 1343,
+            "level": 2
+        },
+        {
+            "id": 313240,
+            "name": "Junior Adamu",
+            "val": 835,
+            "level": 2
+        },
+        {
+            "id": 301478,
+            "name": "Vorarlberg",
+            "val": 32763,
+            "level": 2
+        },
+        {
+            "id": 300906,
+            "name": "K\u00e4rnten",
+            "val": 38553,
+            "level": 2
+        },
+        {
+            "id": 273113,
+            "name": "Tirol (Bundesland)",
+            "val": 62300,
+            "level": 2
+        },
+        {
+            "id": 299337,
+            "name": "Steiermark",
+            "val": 42082,
+            "level": 2
+        },
+        {
+            "id": 273337,
+            "name": "Ober\u00f6sterreich",
+            "val": 68097,
+            "level": 2
+        },
+        {
+            "id": 287477,
+            "name": "Mohamed Camara (Fu\u00dfballspieler, 2000)",
+            "val": 704,
+            "level": 2
+        },
+        {
+            "id": 55381,
+            "name": "Robert Lewandowski",
+            "val": 54288,
+            "level": 2
+        },
+        {
+            "id": 59218,
+            "name": "Julian Nagelsmann",
+            "val": 46001,
+            "level": 2
+        },
+        {
+            "id": 54492,
+            "name": "Fu\u00dfball-Bundesliga",
+            "val": 252036,
+            "level": 2
+        },
+        {
+            "id": 55168,
+            "name": "Borussia Dortmund",
+            "val": 144866,
+            "level": 2
+        },
+        {
+            "id": 54972,
+            "name": "UEFA Champions League",
+            "val": 225951,
+            "level": 2
+        },
+        {
+            "id": 203237,
+            "name": "Marvin Potzmann",
+            "val": 417,
+            "level": 2
+        },
+        {
+            "id": 89308,
+            "name": "Thomas Goiginger",
+            "val": 844,
+            "level": 2
+        },
+        {
+            "id": 94674,
+            "name": "Petar Filipovic",
+            "val": 453,
+            "level": 2
+        },
+        {
+            "id": 238479,
+            "name": "Philipp Wiesinger",
+            "val": 756,
+            "level": 2
+        },
+        {
+            "id": 164024,
+            "name": "Florian Flecker",
+            "val": 561,
+            "level": 2
+        },
+        {
+            "id": 56340,
+            "name": "FK Austria Wien",
+            "val": 13574,
+            "level": 0
+        },
+        {
+            "id": 319495,
+            "name": "Lustenau",
+            "val": 1550,
+            "level": 1
+        },
+        {
+            "id": 82787,
+            "name": "FC Wacker Innsbruck (2002)",
+            "val": 2178,
+            "level": 1
+        },
+        {
+            "id": 81886901,
+            "name": "Markus Mader",
+            "val": 124,
+            "level": 1
+        },
+        {
+            "id": 911202,
+            "name": "Planet Pure Stadion",
+            "val": 67,
+            "level": 2
+        },
+        {
+            "id": 309002,
+            "name": "Michael Cheukoua",
+            "val": 95,
+            "level": 2
+        },
+        {
+            "id": 596157,
+            "name": "SK Rapid Wien II",
+            "val": 603,
+            "level": 2
+        },
+        {
+            "id": 227476,
+            "name": "Ronivaldo",
+            "val": 264,
+            "level": 2
+        },
+        {
+            "id": 232355,
+            "name": "Domenik Schierl",
+            "val": 54,
+            "level": 2
+        },
+        {
+            "id": 84490891,
+            "name": "Brandon Baiye",
+            "val": 15,
+            "level": 2
+        },
+        {
+            "id": 82788243,
+            "name": "Jean Hugonet",
+            "val": 14,
+            "level": 2
+        },
+        {
+            "id": 81886897,
+            "name": "Bryan Teixeira",
+            "val": 18,
+            "level": 2
+        },
+        {
+            "id": 80855,
+            "name": "Wolfsberger AC",
+            "val": 4307,
+            "level": 0
+        },
+        {
+            "id": 132827,
+            "name": "Robin Dutt",
+            "val": 1157,
+            "level": 1
+        },
+        {
+            "id": 264122,
+            "name": "Christopher Wernitznig",
+            "val": 692,
+            "level": 1
+        },
+        {
+            "id": 247474,
+            "name": "Matth\u00e4us Taferner",
+            "val": 674,
+            "level": 2
+        },
+        {
+            "id": 187628,
+            "name": "Mario Leitgeb",
+            "val": 659,
+            "level": 2
+        },
+        {
+            "id": 241163,
+            "name": "Cheikhou Dieng",
+            "val": 320,
+            "level": 2
+        },
+        {
+            "id": 160942,
+            "name": "Thorsten R\u00f6cher",
+            "val": 493,
+            "level": 2
+        },
+        {
+            "id": 81376662,
+            "name": "Tai Baribo",
+            "val": 114,
+            "level": 2
+        },
+        {
+            "id": 93935,
+            "name": "Michael Novak (Fu\u00dfballspieler, 1990)",
+            "val": 255,
+            "level": 2
+        },
+        {
+            "id": 80856,
+            "name": "TSV Hartberg",
+            "val": 2223,
+            "level": 0
+        },
+        {
+            "id": 140898,
+            "name": "Kurt Russ",
+            "val": 508,
+            "level": 1
+        },
+        {
+            "id": 143968,
+            "name": "Markus Schopp",
+            "val": 1048,
+            "level": 1
+        },
+        {
+            "id": 83426,
+            "name": "Mario Sonnleitner",
+            "val": 352,
+            "level": 2
+        },
+        {
+            "id": 371966,
+            "name": "David Stec",
+            "val": 138,
+            "level": 2
+        },
+        {
+            "id": 255764,
+            "name": "J\u00fcrgen Heil",
+            "val": 283,
+            "level": 2
+        },
+        {
+            "id": 119285,
+            "name": "Rajko Rep",
+            "val": 393,
+            "level": 2
+        },
+        {
+            "id": 217167,
+            "name": "Manfred Gollner",
+            "val": 341,
+            "level": 2
+        },
+        {
+            "id": 141344,
+            "name": "Christian Klem",
+            "val": 382,
+            "level": 2
+        },
+        {
+            "id": 132649,
+            "name": "Stefan Hierl\u00e4nder",
+            "val": 771,
+            "level": 2
+        },
+        {
+            "id": 246963,
+            "name": "Ivan Ljubic",
+            "val": 643,
+            "level": 2
+        },
+        {
+            "id": 170791,
+            "name": "Andreas Kuen",
+            "val": 563,
+            "level": 2
+        },
+        {
+            "id": 304717,
+            "name": "Anderson Niangbo",
+            "val": 265,
+            "level": 2
+        },
+        {
+            "id": 283391,
+            "name": "Ferdinand Oswald",
+            "val": 330,
+            "level": 2
+        },
+        {
+            "id": 137373,
+            "name": "Thanos Petsos",
+            "val": 279,
+            "level": 2
+        },
+        {
+            "id": 598427,
+            "name": "Wehrsoldgesetz",
+            "val": 464,
+            "level": 2
+        },
+        {
+            "id": 226756,
+            "name": "David Gugganig",
+            "val": 322,
+            "level": 2
+        }
+    ],
+    "links": [
+        {
+            "source": 118395,
+            "target": 70961569,
+            "weight": 0.2090910738094582,
+            "root": 77519
+        },
+        {
+            "source": 261738,
+            "target": 232772,
+            "weight": 0.3420470467132522,
+            "root": 94853
+        },
+        {
+            "source": 112425,
+            "target": 142384,
+            "weight": 0.23168996659787974,
+            "root": 77519
+        },
+        {
+            "source": 71234,
+            "target": 273344,
+            "weight": 0.23522507003720816,
+            "root": 68108
+        },
+        {
+            "source": 273344,
+            "target": 71234,
+            "weight": 0.23522507003720816,
+            "root": 68108
+        },
+        {
+            "source": 56002,
+            "target": 142968,
+            "weight": 0.25672421284649555,
+            "root": 56340
+        },
+        {
+            "source": 57558,
+            "target": 319495,
+            "weight": 0.2598582778868665,
+            "root": 57558
+        },
+        {
+            "source": 283384,
+            "target": 226756,
+            "weight": 0.2024411200230641,
+            "root": 69244
+        },
+        {
+            "source": 140898,
+            "target": 273344,
+            "weight": 0.24362167978598606,
+            "root": 80856
+        },
+        {
+            "source": 273344,
+            "target": 140898,
+            "weight": 0.24362167978598606,
+            "root": 80856
+        },
+        {
+            "source": 56002,
+            "target": 88432,
+            "weight": 0.24023807075181358,
+            "root": 68108
+        },
+        {
+            "source": 176038,
+            "target": 241163,
+            "weight": 0.32288592281010975,
+            "root": 80855
+        },
+        {
+            "source": 112425,
+            "target": 333436,
+            "weight": 0.23862480192681168,
+            "root": 77519
+        },
+        {
+            "source": 57556,
+            "target": 69244,
+            "weight": 0.30632950359092753,
+            "root": 68108
+        },
+        {
+            "source": 69244,
+            "target": 57556,
+            "weight": 0.30632950359092753,
+            "root": 68108
+        },
+        {
+            "source": 54546,
+            "target": 298819,
+            "weight": 0.193323020662279,
+            "root": 54546
+        },
+        {
+            "source": 57556,
+            "target": 83694,
+            "weight": 0.268215571559589,
+            "root": 56340
+        },
+        {
+            "source": 68108,
+            "target": 71234,
+            "weight": 0.2679078660639953,
+            "root": 69244
+        },
+        {
+            "source": 57556,
+            "target": 94448,
+            "weight": 0.2519749268681022,
+            "root": 56340
+        },
+        {
+            "source": 94448,
+            "target": 132827,
+            "weight": 0.21932909973083525,
+            "root": 80855
+        },
+        {
+            "source": 132827,
+            "target": 94448,
+            "weight": 0.21932909973083525,
+            "root": 80855
+        },
+        {
+            "source": 80855,
+            "target": 132827,
+            "weight": 0.24235007013933307,
+            "root": 80855
+        },
+        {
+            "source": 62874,
+            "target": 119284,
+            "weight": 0.23922898580959612,
+            "root": 57556
+        },
+        {
+            "source": 69244,
+            "target": 274295,
+            "weight": 0.43221915317817894,
+            "root": 68108
+        },
+        {
+            "source": 106996,
+            "target": 232009,
+            "weight": 0.2909811607124215,
+            "root": 94853
+        },
+        {
+            "source": 232009,
+            "target": 106996,
+            "weight": 0.2909811607124215,
+            "root": 94853
+        },
+        {
+            "source": 232581,
+            "target": 287477,
+            "weight": 0.20741029766342425,
+            "root": 54546
+        },
+        {
+            "source": 82787,
+            "target": 83025,
+            "weight": 0.19515956753037372,
+            "root": 57558
+        },
+        {
+            "source": 69244,
+            "target": 283384,
+            "weight": 0.24556305313829788,
+            "root": 69244
+        },
+        {
+            "source": 71234,
+            "target": 88432,
+            "weight": 0.22395480515222602,
+            "root": 80856
+        },
+        {
+            "source": 88432,
+            "target": 71234,
+            "weight": 0.22395480515222602,
+            "root": 80856
+        },
+        {
+            "source": 119284,
+            "target": 170791,
+            "weight": 0.4153931471912327,
+            "root": 62874
+        },
+        {
+            "source": 106996,
+            "target": 70937469,
+            "weight": 0.261584903606282,
+            "root": 94853
+        },
+        {
+            "source": 62874,
+            "target": 108332,
+            "weight": 0.2842870769969144,
+            "root": 80855
+        },
+        {
+            "source": 68108,
+            "target": 298746,
+            "weight": 0.28257067565548594,
+            "root": 68108
+        },
+        {
+            "source": 126001,
+            "target": 246963,
+            "weight": 0.2928944281475426,
+            "root": 62874
+        },
+        {
+            "source": 77519,
+            "target": 301586,
+            "weight": 0.22001611028947055,
+            "root": 77519
+        },
+        {
+            "source": 106996,
+            "target": 232772,
+            "weight": 0.2808659098625436,
+            "root": 94853
+        },
+        {
+            "source": 54974,
+            "target": 54492,
+            "weight": 0.3266701941757267,
+            "root": 54546
+        },
+        {
+            "source": 108332,
+            "target": 246963,
+            "weight": 0.40079494016810896,
+            "root": 62874
+        },
+        {
+            "source": 71234,
+            "target": 88432,
+            "weight": 0.22395480515222602,
+            "root": 69244
+        },
+        {
+            "source": 88432,
+            "target": 71234,
+            "weight": 0.22395480515222602,
+            "root": 69244
+        },
+        {
+            "source": 81886901,
+            "target": 81886897,
+            "weight": 0.2963336296671112,
+            "root": 57558
+        },
+        {
+            "source": 68108,
+            "target": 69244,
+            "weight": 0.23626986317677565,
+            "root": 80856
+        },
+        {
+            "source": 69244,
+            "target": 68108,
+            "weight": 0.23626986317677565,
+            "root": 80856
+        },
+        {
+            "source": 112425,
+            "target": 118395,
+            "weight": 0.21235558086937217,
+            "root": 77519
+        },
+        {
+            "source": 118395,
+            "target": 112425,
+            "weight": 0.21235558086937217,
+            "root": 77519
+        },
+        {
+            "source": 83024,
+            "target": 183112,
+            "weight": 0.21146912012762217,
+            "root": 56002
+        },
+        {
+            "source": 310222,
+            "target": 275061,
+            "weight": 0.21388353339892674,
+            "root": 56002
+        },
+        {
+            "source": 62874,
+            "target": 108332,
+            "weight": 0.2842870769969144,
+            "root": 56002
+        },
+        {
+            "source": 126358,
+            "target": 261738,
+            "weight": 0.34567796600313144,
+            "root": 94853
+        },
+        {
+            "source": 261738,
+            "target": 126358,
+            "weight": 0.34567796600313144,
+            "root": 94853
+        },
+        {
+            "source": 57556,
+            "target": 83694,
+            "weight": 0.268215571559589,
+            "root": 57556
+        },
+        {
+            "source": 94853,
+            "target": 232009,
+            "weight": 0.11818670203074404,
+            "root": 94853
+        },
+        {
+            "source": 56340,
+            "target": 88432,
+            "weight": 0.21689583344333124,
+            "root": 56340
+        },
+        {
+            "source": 69244,
+            "target": 80855,
+            "weight": 0.19923636289769595,
+            "root": 80855
+        },
+        {
+            "source": 80855,
+            "target": 69244,
+            "weight": 0.19923636289769595,
+            "root": 80855
+        },
+        {
+            "source": 283384,
+            "target": 137373,
+            "weight": 0.3890182159771261,
+            "root": 69244
+        },
+        {
+            "source": 80561,
+            "target": 56665,
+            "weight": 0.21122327168172922,
+            "root": 54546
+        },
+        {
+            "source": 232581,
+            "target": 313240,
+            "weight": 0.25474278163822056,
+            "root": 54546
+        },
+        {
+            "source": 126358,
+            "target": 351220,
+            "weight": 0.2369375558484098,
+            "root": 94853
+        },
+        {
+            "source": 351220,
+            "target": 126358,
+            "weight": 0.2369375558484098,
+            "root": 94853
+        },
+        {
+            "source": 319495,
+            "target": 309002,
+            "weight": 0.15635925721711288,
+            "root": 57558
+        },
+        {
+            "source": 140898,
+            "target": 255764,
+            "weight": 0.20307929696785937,
+            "root": 80856
+        },
+        {
+            "source": 118395,
+            "target": 596158,
+            "weight": 0.21738026378727973,
+            "root": 57558
+        },
+        {
+            "source": 596158,
+            "target": 118395,
+            "weight": 0.21738026378727973,
+            "root": 57558
+        },
+        {
+            "source": 69244,
+            "target": 71234,
+            "weight": 0.24683978300227608,
+            "root": 80856
+        },
+        {
+            "source": 94853,
+            "target": 351220,
+            "weight": 0.1253469530847817,
+            "root": 94853
+        },
+        {
+            "source": 82787,
+            "target": 596158,
+            "weight": 0.1836534901428752,
+            "root": 57558
+        },
+        {
+            "source": 596158,
+            "target": 82787,
+            "weight": 0.1836534901428752,
+            "root": 57558
+        },
+        {
+            "source": 57556,
+            "target": 62874,
+            "weight": 0.2649757384776611,
+            "root": 69244
+        },
+        {
+            "source": 62874,
+            "target": 57556,
+            "weight": 0.2649757384776611,
+            "root": 69244
+        },
+        {
+            "source": 62874,
+            "target": 80855,
+            "weight": 0.20789047686097098,
+            "root": 80855
+        },
+        {
+            "source": 80855,
+            "target": 62874,
+            "weight": 0.20789047686097098,
+            "root": 80855
+        },
+        {
+            "source": 62874,
+            "target": 108332,
+            "weight": 0.2842870769969144,
+            "root": 56340
+        },
+        {
+            "source": 71234,
+            "target": 88432,
+            "weight": 0.22395480515222602,
+            "root": 68108
+        },
+        {
+            "source": 88432,
+            "target": 71234,
+            "weight": 0.22395480515222602,
+            "root": 68108
+        },
+        {
+            "source": 56002,
+            "target": 83024,
+            "weight": 0.3376825016239107,
+            "root": 62874
+        },
+        {
+            "source": 56002,
+            "target": 57556,
+            "weight": 0.32061545155600846,
+            "root": 62874
+        },
+        {
+            "source": 57556,
+            "target": 56002,
+            "weight": 0.32061545155600846,
+            "root": 62874
+        },
+        {
+            "source": 68108,
+            "target": 80856,
+            "weight": 0.22775001028648056,
+            "root": 80856
+        },
+        {
+            "source": 80856,
+            "target": 68108,
+            "weight": 0.22775001028648056,
+            "root": 80856
+        },
+        {
+            "source": 83694,
+            "target": 238479,
+            "weight": 0.1627964455931449,
+            "root": 57556
+        },
+        {
+            "source": 274295,
+            "target": 283391,
+            "weight": 0.2886163264271388,
+            "root": 69244
+        },
+        {
+            "source": 56002,
+            "target": 62874,
+            "weight": 0.27107766649443565,
+            "root": 62874
+        },
+        {
+            "source": 62874,
+            "target": 56002,
+            "weight": 0.27107766649443565,
+            "root": 62874
+        },
+        {
+            "source": 57556,
+            "target": 115298,
+            "weight": 0.2880522912221724,
+            "root": 62874
+        },
+        {
+            "source": 69244,
+            "target": 88432,
+            "weight": 0.2402908134394445,
+            "root": 56340
+        },
+        {
+            "source": 57556,
+            "target": 83024,
+            "weight": 0.20043898780091432,
+            "root": 56002
+        },
+        {
+            "source": 57556,
+            "target": 62874,
+            "weight": 0.2649757384776611,
+            "root": 80855
+        },
+        {
+            "source": 62874,
+            "target": 57556,
+            "weight": 0.2649757384776611,
+            "root": 80855
+        },
+        {
+            "source": 54546,
+            "target": 54974,
+            "weight": 0.13588729344561776,
+            "root": 54546
+        },
+        {
+            "source": 56002,
+            "target": 62874,
+            "weight": 0.27107766649443565,
+            "root": 69244
+        },
+        {
+            "source": 62874,
+            "target": 56002,
+            "weight": 0.27107766649443565,
+            "root": 69244
+        },
+        {
+            "source": 232581,
+            "target": 402685,
+            "weight": 0.30241788544081105,
+            "root": 54546
+        },
+        {
+            "source": 402685,
+            "target": 232581,
+            "weight": 0.30241788544081105,
+            "root": 54546
+        },
+        {
+            "source": 93939,
+            "target": 160544,
+            "weight": 0.10289915108550529,
+            "root": 77519
+        },
+        {
+            "source": 108332,
+            "target": 119284,
+            "weight": 0.43770022507017925,
+            "root": 62874
+        },
+        {
+            "source": 119284,
+            "target": 108332,
+            "weight": 0.43770022507017925,
+            "root": 62874
+        },
+        {
+            "source": 57556,
+            "target": 69244,
+            "weight": 0.30632950359092753,
+            "root": 80855
+        },
+        {
+            "source": 69244,
+            "target": 57556,
+            "weight": 0.30632950359092753,
+            "root": 80855
+        },
+        {
+            "source": 68108,
+            "target": 69244,
+            "weight": 0.23626986317677565,
+            "root": 68108
+        },
+        {
+            "source": 69244,
+            "target": 68108,
+            "weight": 0.23626986317677565,
+            "root": 68108
+        },
+        {
+            "source": 126358,
+            "target": 232772,
+            "weight": 0.2648332972064244,
+            "root": 94853
+        },
+        {
+            "source": 106996,
+            "target": 126358,
+            "weight": 0.2531034572980389,
+            "root": 94853
+        },
+        {
+            "source": 126358,
+            "target": 106996,
+            "weight": 0.2531034572980389,
+            "root": 94853
+        },
+        {
+            "source": 81886901,
+            "target": 232355,
+            "weight": 0.41550015922716765,
+            "root": 57558
+        },
+        {
+            "source": 176038,
+            "target": 160942,
+            "weight": 0.32284749286125775,
+            "root": 80855
+        },
+        {
+            "source": 70963690,
+            "target": 82445655,
+            "weight": 0.1643989873053573,
+            "root": 77519
+        },
+        {
+            "source": 83694,
+            "target": 94674,
+            "weight": 0.15181205737069062,
+            "root": 57556
+        },
+        {
+            "source": 351220,
+            "target": 70937469,
+            "weight": 0.30970970258478514,
+            "root": 94853
+        },
+        {
+            "source": 57558,
+            "target": 82787,
+            "weight": 0.22466976462762284,
+            "root": 57558
+        },
+        {
+            "source": 69244,
+            "target": 274295,
+            "weight": 0.43221915317817894,
+            "root": 80855
+        },
+        {
+            "source": 57556,
+            "target": 62874,
+            "weight": 0.2649757384776611,
+            "root": 56002
+        },
+        {
+            "source": 62874,
+            "target": 57556,
+            "weight": 0.2649757384776611,
+            "root": 56002
+        },
+        {
+            "source": 57558,
+            "target": 81886901,
+            "weight": 0.21940006022837202,
+            "root": 57558
+        },
+        {
+            "source": 126001,
+            "target": 132649,
+            "weight": 0.32497427388826877,
+            "root": 62874
+        },
+        {
+            "source": 77519,
+            "target": 118395,
+            "weight": 0.2153314536868083,
+            "root": 77519
+        },
+        {
+            "source": 62874,
+            "target": 126001,
+            "weight": 0.341330105532244,
+            "root": 80855
+        },
+        {
+            "source": 112425,
+            "target": 596158,
+            "weight": 0.24024348283601532,
+            "root": 57558
+        },
+        {
+            "source": 596158,
+            "target": 112425,
+            "weight": 0.24024348283601532,
+            "root": 57558
+        },
+        {
+            "source": 57556,
+            "target": 69244,
+            "weight": 0.30632950359092753,
+            "root": 56002
+        },
+        {
+            "source": 69244,
+            "target": 57556,
+            "weight": 0.30632950359092753,
+            "root": 56002
+        },
+        {
+            "source": 402685,
+            "target": 842112,
+            "weight": 0.2317856167976383,
+            "root": 54546
+        },
+        {
+            "source": 88432,
+            "target": 94448,
+            "weight": 0.30330973647880327,
+            "root": 56340
+        },
+        {
+            "source": 94448,
+            "target": 88432,
+            "weight": 0.30330973647880327,
+            "root": 56340
+        },
+        {
+            "source": 69244,
+            "target": 71234,
+            "weight": 0.24683978300227608,
+            "root": 68108
+        },
+        {
+            "source": 62874,
+            "target": 108332,
+            "weight": 0.2842870769969144,
+            "root": 57556
+        },
+        {
+            "source": 143968,
+            "target": 119285,
+            "weight": 0.2726849268365497,
+            "root": 80856
+        },
+        {
+            "source": 54546,
+            "target": 232581,
+            "weight": 0.13793156146675556,
+            "root": 54546
+        },
+        {
+            "source": 106996,
+            "target": 351220,
+            "weight": 0.3921696687424997,
+            "root": 94853
+        },
+        {
+            "source": 351220,
+            "target": 106996,
+            "weight": 0.3921696687424997,
+            "root": 94853
+        },
+        {
+            "source": 69244,
+            "target": 283384,
+            "weight": 0.24556305313829788,
+            "root": 57556
+        },
+        {
+            "source": 301586,
+            "target": 332145,
+            "weight": 0.1350559661796268,
+            "root": 77519
+        },
+        {
+            "source": 70963690,
+            "target": 81929755,
+            "weight": 0.15007505629691603,
+            "root": 77519
+        },
+        {
+            "source": 132827,
+            "target": 160942,
+            "weight": 0.2528967383026301,
+            "root": 80855
+        },
+        {
+            "source": 94853,
+            "target": 261738,
+            "weight": 0.15318917778750551,
+            "root": 94853
+        },
+        {
+            "source": 56002,
+            "target": 88432,
+            "weight": 0.24023807075181358,
+            "root": 56340
+        },
+        {
+            "source": 56002,
+            "target": 142968,
+            "weight": 0.25672421284649555,
+            "root": 62874
+        },
+        {
+            "source": 142968,
+            "target": 81266437,
+            "weight": 0.2128035410803856,
+            "root": 56002
+        },
+        {
+            "source": 319495,
+            "target": 81886901,
+            "weight": 0.20300807588904105,
+            "root": 57558
+        },
+        {
+            "source": 81886901,
+            "target": 319495,
+            "weight": 0.20300807588904105,
+            "root": 57558
+        },
+        {
+            "source": 57556,
+            "target": 69244,
+            "weight": 0.30632950359092753,
+            "root": 56340
+        },
+        {
+            "source": 69244,
+            "target": 57556,
+            "weight": 0.30632950359092753,
+            "root": 56340
+        },
+        {
+            "source": 83024,
+            "target": 310222,
+            "weight": 0.1743883279774735,
+            "root": 56002
+        },
+        {
+            "source": 310222,
+            "target": 83024,
+            "weight": 0.1743883279774735,
+            "root": 56002
+        },
+        {
+            "source": 62874,
+            "target": 126001,
+            "weight": 0.341330105532244,
+            "root": 56002
+        },
+        {
+            "source": 232009,
+            "target": 261738,
+            "weight": 0.371073564576041,
+            "root": 94853
+        },
+        {
+            "source": 261738,
+            "target": 232009,
+            "weight": 0.371073564576041,
+            "root": 94853
+        },
+        {
+            "source": 112425,
+            "target": 596158,
+            "weight": 0.24024348283601532,
+            "root": 77519
+        },
+        {
+            "source": 596158,
+            "target": 112425,
+            "weight": 0.24024348283601532,
+            "root": 77519
+        },
+        {
+            "source": 54974,
+            "target": 59218,
+            "weight": 0.3594348075675572,
+            "root": 54546
+        },
+        {
+            "source": 232009,
+            "target": 351220,
+            "weight": 0.4055175020198813,
+            "root": 94853
+        },
+        {
+            "source": 351220,
+            "target": 232009,
+            "weight": 0.4055175020198813,
+            "root": 94853
+        },
+        {
+            "source": 129808,
+            "target": 129807,
+            "weight": 0.17994502519550262,
+            "root": 68108
+        },
+        {
+            "source": 596158,
+            "target": 142384,
+            "weight": 0.23684515583133897,
+            "root": 57558
+        },
+        {
+            "source": 69244,
+            "target": 283384,
+            "weight": 0.24556305313829788,
+            "root": 80855
+        },
+        {
+            "source": 57556,
+            "target": 83694,
+            "weight": 0.268215571559589,
+            "root": 62874
+        },
+        {
+            "source": 56002,
+            "target": 310222,
+            "weight": 0.2763166423029015,
+            "root": 69244
+        },
+        {
+            "source": 68108,
+            "target": 88432,
+            "weight": 0.23251915055691513,
+            "root": 56340
+        },
+        {
+            "source": 70963690,
+            "target": 70961569,
+            "weight": 0.19830973728388174,
+            "root": 77519
+        },
+        {
+            "source": 232009,
+            "target": 70937469,
+            "weight": 0.17924496637689605,
+            "root": 94853
+        },
+        {
+            "source": 298746,
+            "target": 110308,
+            "weight": 0.18094066993243652,
+            "root": 68108
+        },
+        {
+            "source": 62874,
+            "target": 126001,
+            "weight": 0.341330105532244,
+            "root": 56340
+        },
+        {
+            "source": 80855,
+            "target": 176038,
+            "weight": 0.30725248145299766,
+            "root": 80855
+        },
+        {
+            "source": 94853,
+            "target": 126358,
+            "weight": 0.15880444255018059,
+            "root": 94853
+        },
+        {
+            "source": 119284,
+            "target": 132649,
+            "weight": 0.47089720048345285,
+            "root": 62874
+        },
+        {
+            "source": 54546,
+            "target": 80561,
+            "weight": 0.3116043533202803,
+            "root": 54546
+        },
+        {
+            "source": 319495,
+            "target": 911202,
+            "weight": 0.1675677774469695,
+            "root": 57558
+        },
+        {
+            "source": 264122,
+            "target": 247474,
+            "weight": 0.3865635770715711,
+            "root": 80855
+        },
+        {
+            "source": 81886901,
+            "target": 309002,
+            "weight": 0.29483384287869907,
+            "root": 57558
+        },
+        {
+            "source": 57556,
+            "target": 62874,
+            "weight": 0.2649757384776611,
+            "root": 57556
+        },
+        {
+            "source": 62874,
+            "target": 57556,
+            "weight": 0.2649757384776611,
+            "root": 57556
+        },
+        {
+            "source": 119284,
+            "target": 304717,
+            "weight": 0.31394593171843577,
+            "root": 62874
+        },
+        {
+            "source": 57558,
+            "target": 112425,
+            "weight": 0.3011868189239595,
+            "root": 57558
+        },
+        {
+            "source": 176038,
+            "target": 247474,
+            "weight": 0.4499293618401383,
+            "root": 80855
+        },
+        {
+            "source": 68108,
+            "target": 273344,
+            "weight": 0.21490044381427162,
+            "root": 80856
+        },
+        {
+            "source": 57556,
+            "target": 69244,
+            "weight": 0.30632950359092753,
+            "root": 57556
+        },
+        {
+            "source": 69244,
+            "target": 57556,
+            "weight": 0.30632950359092753,
+            "root": 57556
+        },
+        {
+            "source": 80856,
+            "target": 71234,
+            "weight": 0.22305645975479102,
+            "root": 80856
+        },
+        {
+            "source": 142968,
+            "target": 176038,
+            "weight": 0.2900229090966028,
+            "root": 56002
+        },
+        {
+            "source": 176038,
+            "target": 142968,
+            "weight": 0.2900229090966028,
+            "root": 56002
+        },
+        {
+            "source": 108332,
+            "target": 132649,
+            "weight": 0.4061136858224884,
+            "root": 62874
+        },
+        {
+            "source": 112425,
+            "target": 83025,
+            "weight": 0.25546973597458894,
+            "root": 57558
+        },
+        {
+            "source": 56002,
+            "target": 57556,
+            "weight": 0.32061545155600846,
+            "root": 69244
+        },
+        {
+            "source": 57556,
+            "target": 56002,
+            "weight": 0.32061545155600846,
+            "root": 69244
+        },
+        {
+            "source": 69244,
+            "target": 71234,
+            "weight": 0.24683978300227608,
+            "root": 69244
+        },
+        {
+            "source": 56002,
+            "target": 83024,
+            "weight": 0.3376825016239107,
+            "root": 69244
+        },
+        {
+            "source": 69244,
+            "target": 274295,
+            "weight": 0.43221915317817894,
+            "root": 57556
+        },
+        {
+            "source": 118395,
+            "target": 83025,
+            "weight": 0.20702881653518385,
+            "root": 77519
+        },
+        {
+            "source": 54974,
+            "target": 55168,
+            "weight": 0.31410544480474056,
+            "root": 54546
+        },
+        {
+            "source": 94448,
+            "target": 142968,
+            "weight": 0.24319475111765537,
+            "root": 56002
+        },
+        {
+            "source": 142968,
+            "target": 94448,
+            "weight": 0.24319475111765537,
+            "root": 56002
+        },
+        {
+            "source": 57556,
+            "target": 115298,
+            "weight": 0.2880522912221724,
+            "root": 69244
+        },
+        {
+            "source": 274295,
+            "target": 283384,
+            "weight": 0.2520408325261106,
+            "root": 69244
+        },
+        {
+            "source": 283384,
+            "target": 274295,
+            "weight": 0.2520408325261106,
+            "root": 69244
+        },
+        {
+            "source": 83024,
+            "target": 473607,
+            "weight": 0.21769582599093124,
+            "root": 56002
+        },
+        {
+            "source": 57558,
+            "target": 112425,
+            "weight": 0.3011868189239595,
+            "root": 77519
+        },
+        {
+            "source": 118395,
+            "target": 596158,
+            "weight": 0.21738026378727973,
+            "root": 77519
+        },
+        {
+            "source": 596158,
+            "target": 118395,
+            "weight": 0.21738026378727973,
+            "root": 77519
+        },
+        {
+            "source": 62874,
+            "target": 126001,
+            "weight": 0.341330105532244,
+            "root": 57556
+        },
+        {
+            "source": 71234,
+            "target": 88432,
+            "weight": 0.22395480515222602,
+            "root": 56340
+        },
+        {
+            "source": 88432,
+            "target": 71234,
+            "weight": 0.22395480515222602,
+            "root": 56340
+        },
+        {
+            "source": 69244,
+            "target": 71234,
+            "weight": 0.24683978300227608,
+            "root": 80855
+        },
+        {
+            "source": 56340,
+            "target": 62874,
+            "weight": 0.2002947567938153,
+            "root": 56340
+        },
+        {
+            "source": 62874,
+            "target": 56340,
+            "weight": 0.2002947567938153,
+            "root": 56340
+        },
+        {
+            "source": 108332,
+            "target": 126001,
+            "weight": 0.39037029563294,
+            "root": 62874
+        },
+        {
+            "source": 126001,
+            "target": 108332,
+            "weight": 0.39037029563294,
+            "root": 62874
+        },
+        {
+            "source": 56002,
+            "target": 62874,
+            "weight": 0.27107766649443565,
+            "root": 80855
+        },
+        {
+            "source": 62874,
+            "target": 56002,
+            "weight": 0.27107766649443565,
+            "root": 80855
+        },
+        {
+            "source": 274295,
+            "target": 137373,
+            "weight": 0.2069596212663092,
+            "root": 69244
+        },
+        {
+            "source": 54546,
+            "target": 402685,
+            "weight": 0.21550764418080826,
+            "root": 54546
+        },
+        {
+            "source": 115298,
+            "target": 89308,
+            "weight": 0.36379589220320174,
+            "root": 57556
+        },
+        {
+            "source": 62874,
+            "target": 119284,
+            "weight": 0.23922898580959612,
+            "root": 62874
+        },
+        {
+            "source": 94448,
+            "target": 142968,
+            "weight": 0.24319475111765537,
+            "root": 56340
+        },
+        {
+            "source": 142968,
+            "target": 94448,
+            "weight": 0.24319475111765537,
+            "root": 56340
+        },
+        {
+            "source": 402685,
+            "target": 313240,
+            "weight": 0.23172994436750446,
+            "root": 54546
+        },
+        {
+            "source": 176038,
+            "target": 264122,
+            "weight": 0.5195159722342221,
+            "root": 80855
+        },
+        {
+            "source": 264122,
+            "target": 176038,
+            "weight": 0.5195159722342221,
+            "root": 80855
+        },
+        {
+            "source": 264122,
+            "target": 93935,
+            "weight": 0.27852406456044754,
+            "root": 80855
+        },
+        {
+            "source": 264122,
+            "target": 160942,
+            "weight": 0.28420491296395584,
+            "root": 80855
+        },
+        {
+            "source": 56002,
+            "target": 69244,
+            "weight": 0.2566952577346529,
+            "root": 68108
+        },
+        {
+            "source": 69244,
+            "target": 56002,
+            "weight": 0.2566952577346529,
+            "root": 68108
+        },
+        {
+            "source": 80561,
+            "target": 402685,
+            "weight": 0.2728827483330692,
+            "root": 54546
+        },
+        {
+            "source": 402685,
+            "target": 80561,
+            "weight": 0.2728827483330692,
+            "root": 54546
+        },
+        {
+            "source": 140898,
+            "target": 83426,
+            "weight": 0.2246572391210162,
+            "root": 80856
+        },
+        {
+            "source": 83024,
+            "target": 317360,
+            "weight": 0.2079199109084666,
+            "root": 56002
+        },
+        {
+            "source": 129808,
+            "target": 298746,
+            "weight": 0.232697460165981,
+            "root": 68108
+        },
+        {
+            "source": 298746,
+            "target": 129808,
+            "weight": 0.232697460165981,
+            "root": 68108
+        },
+        {
+            "source": 129808,
+            "target": 210995,
+            "weight": 0.1527674823802585,
+            "root": 68108
+        },
+        {
+            "source": 56002,
+            "target": 62874,
+            "weight": 0.27107766649443565,
+            "root": 56002
+        },
+        {
+            "source": 62874,
+            "target": 56002,
+            "weight": 0.27107766649443565,
+            "root": 56002
+        },
+        {
+            "source": 56340,
+            "target": 57556,
+            "weight": 0.20076543948370298,
+            "root": 56340
+        },
+        {
+            "source": 57556,
+            "target": 56340,
+            "weight": 0.20076543948370298,
+            "root": 56340
+        },
+        {
+            "source": 80856,
+            "target": 140898,
+            "weight": 0.2079652086756914,
+            "root": 80856
+        },
+        {
+            "source": 143968,
+            "target": 217167,
+            "weight": 0.16560649431073693,
+            "root": 80856
+        },
+        {
+            "source": 71234,
+            "target": 166899,
+            "weight": 0.2740817515295538,
+            "root": 80856
+        },
+        {
+            "source": 142968,
+            "target": 463769,
+            "weight": 0.20856541677634083,
+            "root": 56002
+        },
+        {
+            "source": 57556,
+            "target": 62874,
+            "weight": 0.2649757384776611,
+            "root": 56340
+        },
+        {
+            "source": 62874,
+            "target": 57556,
+            "weight": 0.2649757384776611,
+            "root": 56340
+        },
+        {
+            "source": 310222,
+            "target": 600935,
+            "weight": 0.12474108933860077,
+            "root": 56002
+        },
+        {
+            "source": 69244,
+            "target": 273344,
+            "weight": 0.2448206671039222,
+            "root": 80856
+        },
+        {
+            "source": 143968,
+            "target": 141344,
+            "weight": 0.1643694176646335,
+            "root": 80856
+        },
+        {
+            "source": 283384,
+            "target": 283391,
+            "weight": 0.23377035749053002,
+            "root": 69244
+        },
+        {
+            "source": 54974,
+            "target": 55381,
+            "weight": 0.3823284587874423,
+            "root": 54546
+        },
+        {
+            "source": 80856,
+            "target": 273344,
+            "weight": 0.29396196468304664,
+            "root": 80856
+        },
+        {
+            "source": 56002,
+            "target": 142968,
+            "weight": 0.25672421284649555,
+            "root": 69244
+        },
+        {
+            "source": 82787,
+            "target": 227476,
+            "weight": 0.1899028974062158,
+            "root": 57558
+        },
+        {
+            "source": 126358,
+            "target": 76554,
+            "weight": 0.37337636956574705,
+            "root": 94853
+        },
+        {
+            "source": 298819,
+            "target": 273113,
+            "weight": 0.24636201796831955,
+            "root": 54546
+        },
+        {
+            "source": 56002,
+            "target": 62874,
+            "weight": 0.27107766649443565,
+            "root": 56340
+        },
+        {
+            "source": 62874,
+            "target": 56002,
+            "weight": 0.27107766649443565,
+            "root": 56340
+        },
+        {
+            "source": 80855,
+            "target": 264122,
+            "weight": 0.2044721776425691,
+            "root": 80855
+        },
+        {
+            "source": 71234,
+            "target": 273344,
+            "weight": 0.23522507003720816,
+            "root": 80856
+        },
+        {
+            "source": 273344,
+            "target": 71234,
+            "weight": 0.23522507003720816,
+            "root": 80856
+        },
+        {
+            "source": 57556,
+            "target": 83694,
+            "weight": 0.268215571559589,
+            "root": 69244
+        },
+        {
+            "source": 298819,
+            "target": 301478,
+            "weight": 0.2742635792544911,
+            "root": 54546
+        },
+        {
+            "source": 68108,
+            "target": 129808,
+            "weight": 0.2537613598320985,
+            "root": 80856
+        },
+        {
+            "source": 298746,
+            "target": 59494,
+            "weight": 0.22311996376572402,
+            "root": 68108
+        },
+        {
+            "source": 112425,
+            "target": 319495,
+            "weight": 0.16466614963514978,
+            "root": 57558
+        },
+        {
+            "source": 319495,
+            "target": 112425,
+            "weight": 0.16466614963514978,
+            "root": 57558
+        },
+        {
+            "source": 129808,
+            "target": 221032,
+            "weight": 0.1547884823256533,
+            "root": 68108
+        },
+        {
+            "source": 108332,
+            "target": 170791,
+            "weight": 0.39704292450345624,
+            "root": 62874
+        },
+        {
+            "source": 56002,
+            "target": 94448,
+            "weight": 0.2541159187968306,
+            "root": 56340
+        },
+        {
+            "source": 93939,
+            "target": 510243,
+            "weight": 0.11751911201153428,
+            "root": 77519
+        },
+        {
+            "source": 68108,
+            "target": 88432,
+            "weight": 0.23251915055691513,
+            "root": 80856
+        },
+        {
+            "source": 301586,
+            "target": 82759716,
+            "weight": 0.15296715148986506,
+            "root": 77519
+        },
+        {
+            "source": 93939,
+            "target": 111840,
+            "weight": 0.10858841489895402,
+            "root": 77519
+        },
+        {
+            "source": 56002,
+            "target": 142968,
+            "weight": 0.25672421284649555,
+            "root": 56002
+        },
+        {
+            "source": 142968,
+            "target": 310222,
+            "weight": 0.17220158734964663,
+            "root": 56002
+        },
+        {
+            "source": 310222,
+            "target": 142968,
+            "weight": 0.17220158734964663,
+            "root": 56002
+        },
+        {
+            "source": 115298,
+            "target": 238479,
+            "weight": 0.3167525044626322,
+            "root": 57556
+        },
+        {
+            "source": 57558,
+            "target": 596158,
+            "weight": 0.22863653830981587,
+            "root": 57558
+        },
+        {
+            "source": 56002,
+            "target": 310222,
+            "weight": 0.2763166423029015,
+            "root": 56002
+        },
+        {
+            "source": 112425,
+            "target": 333436,
+            "weight": 0.23862480192681168,
+            "root": 57558
+        },
+        {
+            "source": 132827,
+            "target": 81376662,
+            "weight": 0.19549661569046475,
+            "root": 80855
+        },
+        {
+            "source": 62874,
+            "target": 126001,
+            "weight": 0.341330105532244,
+            "root": 62874
+        },
+        {
+            "source": 56002,
+            "target": 83024,
+            "weight": 0.3376825016239107,
+            "root": 57556
+        },
+        {
+            "source": 56002,
+            "target": 69244,
+            "weight": 0.2566952577346529,
+            "root": 69244
+        },
+        {
+            "source": 69244,
+            "target": 56002,
+            "weight": 0.2566952577346529,
+            "root": 69244
+        },
+        {
+            "source": 69244,
+            "target": 71234,
+            "weight": 0.24683978300227608,
+            "root": 57556
+        },
+        {
+            "source": 115298,
+            "target": 94674,
+            "weight": 0.33347326108589653,
+            "root": 57556
+        },
+        {
+            "source": 81886901,
+            "target": 82788243,
+            "weight": 0.3360107525161235,
+            "root": 57558
+        },
+        {
+            "source": 56002,
+            "target": 56340,
+            "weight": 0.21702996787169024,
+            "root": 56340
+        },
+        {
+            "source": 56340,
+            "target": 56002,
+            "weight": 0.21702996787169024,
+            "root": 56340
+        },
+        {
+            "source": 56002,
+            "target": 62874,
+            "weight": 0.27107766649443565,
+            "root": 57556
+        },
+        {
+            "source": 62874,
+            "target": 56002,
+            "weight": 0.27107766649443565,
+            "root": 57556
+        },
+        {
+            "source": 57556,
+            "target": 115298,
+            "weight": 0.2880522912221724,
+            "root": 57556
+        },
+        {
+            "source": 82787,
+            "target": 112425,
+            "weight": 0.19625081247027953,
+            "root": 57558
+        },
+        {
+            "source": 112425,
+            "target": 82787,
+            "weight": 0.19625081247027953,
+            "root": 57558
+        },
+        {
+            "source": 132827,
+            "target": 187628,
+            "weight": 0.20499517739818682,
+            "root": 80855
+        },
+        {
+            "source": 88432,
+            "target": 94448,
+            "weight": 0.30330973647880327,
+            "root": 68108
+        },
+        {
+            "source": 94448,
+            "target": 88432,
+            "weight": 0.30330973647880327,
+            "root": 68108
+        },
+        {
+            "source": 176038,
+            "target": 187628,
+            "weight": 0.44196314064226216,
+            "root": 80855
+        },
+        {
+            "source": 68108,
+            "target": 71234,
+            "weight": 0.2679078660639953,
+            "root": 80856
+        },
+        {
+            "source": 298746,
+            "target": 798813,
+            "weight": 0.18291735542482085,
+            "root": 68108
+        },
+        {
+            "source": 56002,
+            "target": 69244,
+            "weight": 0.2566952577346529,
+            "root": 80855
+        },
+        {
+            "source": 69244,
+            "target": 56002,
+            "weight": 0.2566952577346529,
+            "root": 80855
+        },
+        {
+            "source": 140898,
+            "target": 371966,
+            "weight": 0.21527988676924983,
+            "root": 80856
+        },
+        {
+            "source": 54974,
+            "target": 54972,
+            "weight": 0.2707906584614594,
+            "root": 54546
+        },
+        {
+            "source": 68108,
+            "target": 129808,
+            "weight": 0.2537613598320985,
+            "root": 68108
+        },
+        {
+            "source": 56002,
+            "target": 310222,
+            "weight": 0.2763166423029015,
+            "root": 56340
+        },
+        {
+            "source": 80561,
+            "target": 232581,
+            "weight": 0.23504035800245057,
+            "root": 54546
+        },
+        {
+            "source": 232581,
+            "target": 80561,
+            "weight": 0.23504035800245057,
+            "root": 54546
+        },
+        {
+            "source": 298819,
+            "target": 299337,
+            "weight": 0.22879811308319345,
+            "root": 54546
+        },
+        {
+            "source": 83694,
+            "target": 115298,
+            "weight": 0.20396538930971508,
+            "root": 57556
+        },
+        {
+            "source": 115298,
+            "target": 83694,
+            "weight": 0.20396538930971508,
+            "root": 57556
+        },
+        {
+            "source": 80856,
+            "target": 143968,
+            "weight": 0.20310065366873392,
+            "root": 80856
+        },
+        {
+            "source": 62874,
+            "target": 108332,
+            "weight": 0.2842870769969144,
+            "root": 62874
+        },
+        {
+            "source": 77519,
+            "target": 70963690,
+            "weight": 0.2529742054268245,
+            "root": 77519
+        },
+        {
+            "source": 112425,
+            "target": 83025,
+            "weight": 0.25546973597458894,
+            "root": 77519
+        },
+        {
+            "source": 106996,
+            "target": 261738,
+            "weight": 0.552796601071869,
+            "root": 94853
+        },
+        {
+            "source": 261738,
+            "target": 106996,
+            "weight": 0.552796601071869,
+            "root": 94853
+        },
+        {
+            "source": 68108,
+            "target": 88432,
+            "weight": 0.23251915055691513,
+            "root": 68108
+        },
+        {
+            "source": 115298,
+            "target": 203237,
+            "weight": 0.39462078460378386,
+            "root": 57556
+        },
+        {
+            "source": 119284,
+            "target": 246963,
+            "weight": 0.4410435652201792,
+            "root": 62874
+        },
+        {
+            "source": 402685,
+            "target": 80771,
+            "weight": 0.23176942651171528,
+            "root": 54546
+        },
+        {
+            "source": 93939,
+            "target": 71187132,
+            "weight": 0.14890247043403096,
+            "root": 77519
+        },
+        {
+            "source": 94448,
+            "target": 176038,
+            "weight": 0.2847248280598353,
+            "root": 56340
+        },
+        {
+            "source": 176038,
+            "target": 94448,
+            "weight": 0.2847248280598353,
+            "root": 56340
+        },
+        {
+            "source": 232009,
+            "target": 232010,
+            "weight": 0.19194646967528656,
+            "root": 94853
+        },
+        {
+            "source": 56002,
+            "target": 83024,
+            "weight": 0.3376825016239107,
+            "root": 56002
+        },
+        {
+            "source": 56002,
+            "target": 57556,
+            "weight": 0.32061545155600846,
+            "root": 56002
+        },
+        {
+            "source": 57556,
+            "target": 56002,
+            "weight": 0.32061545155600846,
+            "root": 56002
+        },
+        {
+            "source": 301586,
+            "target": 474056,
+            "weight": 0.1298051315270169,
+            "root": 77519
+        },
+        {
+            "source": 56002,
+            "target": 310222,
+            "weight": 0.2763166423029015,
+            "root": 62874
+        },
+        {
+            "source": 298819,
+            "target": 300906,
+            "weight": 0.25242808556044743,
+            "root": 54546
+        },
+        {
+            "source": 57556,
+            "target": 115298,
+            "weight": 0.2880522912221724,
+            "root": 56002
+        },
+        {
+            "source": 62874,
+            "target": 119284,
+            "weight": 0.23922898580959612,
+            "root": 80855
+        },
+        {
+            "source": 143968,
+            "target": 273344,
+            "weight": 0.20626881008604667,
+            "root": 80856
+        },
+        {
+            "source": 273344,
+            "target": 143968,
+            "weight": 0.20626881008604667,
+            "root": 80856
+        },
+        {
+            "source": 264122,
+            "target": 187628,
+            "weight": 0.3702066827792586,
+            "root": 80855
+        },
+        {
+            "source": 94853,
+            "target": 106996,
+            "weight": 0.13530405067833437,
+            "root": 94853
+        },
+        {
+            "source": 56002,
+            "target": 142968,
+            "weight": 0.25672421284649555,
+            "root": 57556
+        },
+        {
+            "source": 68108,
+            "target": 71234,
+            "weight": 0.2679078660639953,
+            "root": 68108
+        },
+        {
+            "source": 301586,
+            "target": 81212847,
+            "weight": 0.17121468666477335,
+            "root": 77519
+        },
+        {
+            "source": 298819,
+            "target": 273337,
+            "weight": 0.22685889918685298,
+            "root": 54546
+        },
+        {
+            "source": 56002,
+            "target": 310222,
+            "weight": 0.2763166423029015,
+            "root": 57556
+        },
+        {
+            "source": 83694,
+            "target": 89308,
+            "weight": 0.1581573369872722,
+            "root": 57556
+        },
+        {
+            "source": 56002,
+            "target": 57556,
+            "weight": 0.32061545155600846,
+            "root": 56340
+        },
+        {
+            "source": 57556,
+            "target": 56002,
+            "weight": 0.32061545155600846,
+            "root": 56340
+        },
+        {
+            "source": 56002,
+            "target": 83024,
+            "weight": 0.3376825016239107,
+            "root": 56340
+        },
+        {
+            "source": 71234,
+            "target": 166899,
+            "weight": 0.2740817515295538,
+            "root": 69244
+        },
+        {
+            "source": 69244,
+            "target": 283384,
+            "weight": 0.24556305313829788,
+            "root": 68108
+        },
+        {
+            "source": 57556,
+            "target": 115298,
+            "weight": 0.2880522912221724,
+            "root": 56340
+        },
+        {
+            "source": 62874,
+            "target": 119284,
+            "weight": 0.23922898580959612,
+            "root": 56002
+        },
+        {
+            "source": 69244,
+            "target": 88432,
+            "weight": 0.2402908134394445,
+            "root": 68108
+        },
+        {
+            "source": 77519,
+            "target": 112425,
+            "weight": 0.1860654134912845,
+            "root": 77519
+        },
+        {
+            "source": 57556,
+            "target": 62874,
+            "weight": 0.2649757384776611,
+            "root": 62874
+        },
+        {
+            "source": 62874,
+            "target": 57556,
+            "weight": 0.2649757384776611,
+            "root": 62874
+        },
+        {
+            "source": 71234,
+            "target": 273344,
+            "weight": 0.23522507003720816,
+            "root": 69244
+        },
+        {
+            "source": 273344,
+            "target": 71234,
+            "weight": 0.23522507003720816,
+            "root": 69244
+        },
+        {
+            "source": 56340,
+            "target": 94448,
+            "weight": 0.20673373683955817,
+            "root": 56340
+        },
+        {
+            "source": 119284,
+            "target": 126001,
+            "weight": 0.3125093740634801,
+            "root": 62874
+        },
+        {
+            "source": 126001,
+            "target": 119284,
+            "weight": 0.3125093740634801,
+            "root": 62874
+        },
+        {
+            "source": 57556,
+            "target": 69244,
+            "weight": 0.30632950359092753,
+            "root": 62874
+        },
+        {
+            "source": 69244,
+            "target": 57556,
+            "weight": 0.30632950359092753,
+            "root": 62874
+        },
+        {
+            "source": 115298,
+            "target": 164024,
+            "weight": 0.30227705649710945,
+            "root": 57556
+        },
+        {
+            "source": 274295,
+            "target": 598427,
+            "weight": 0.18723003649148157,
+            "root": 69244
+        },
+        {
+            "source": 57556,
+            "target": 69244,
+            "weight": 0.30632950359092753,
+            "root": 69244
+        },
+        {
+            "source": 69244,
+            "target": 57556,
+            "weight": 0.30632950359092753,
+            "root": 69244
+        },
+        {
+            "source": 80561,
+            "target": 666421,
+            "weight": 0.26359895441397013,
+            "root": 54546
+        },
+        {
+            "source": 112425,
+            "target": 142384,
+            "weight": 0.23168996659787974,
+            "root": 57558
+        },
+        {
+            "source": 62874,
+            "target": 119284,
+            "weight": 0.23922898580959612,
+            "root": 56340
+        },
+        {
+            "source": 81886901,
+            "target": 84490891,
+            "weight": 0.34780417182012624,
+            "root": 57558
+        },
+        {
+            "source": 71234,
+            "target": 166899,
+            "weight": 0.2740817515295538,
+            "root": 68108
+        },
+        {
+            "source": 596158,
+            "target": 596157,
+            "weight": 0.2453059991251617,
+            "root": 57558
+        },
+        {
+            "source": 68108,
+            "target": 298746,
+            "weight": 0.28257067565548594,
+            "root": 80856
+        },
+        {
+            "source": 232581,
+            "target": 842112,
+            "weight": 0.2291070111491476,
+            "root": 54546
+        },
+        {
+            "source": 56002,
+            "target": 69244,
+            "weight": 0.2566952577346529,
+            "root": 57556
+        },
+        {
+            "source": 69244,
+            "target": 56002,
+            "weight": 0.2566952577346529,
+            "root": 57556
+        },
+        {
+            "source": 69244,
+            "target": 274295,
+            "weight": 0.43221915317817894,
+            "root": 69244
+        },
+        {
+            "source": 77519,
+            "target": 93939,
+            "weight": 0.21067284845850265,
+            "root": 77519
+        },
+        {
+            "source": 57556,
+            "target": 83694,
+            "weight": 0.268215571559589,
+            "root": 56002
+        },
+        {
+            "source": 70963690,
+            "target": 713847,
+            "weight": 0.15499685165842572,
+            "root": 77519
+        },
+        {
+            "source": 56002,
+            "target": 57556,
+            "weight": 0.32061545155600846,
+            "root": 57556
+        },
+        {
+            "source": 57556,
+            "target": 56002,
+            "weight": 0.32061545155600846,
+            "root": 57556
+        },
+        {
+            "source": 261738,
+            "target": 351220,
+            "weight": 0.4993094646814417,
+            "root": 94853
+        },
+        {
+            "source": 351220,
+            "target": 261738,
+            "weight": 0.4993094646814417,
+            "root": 94853
+        }
+    ]
+}
