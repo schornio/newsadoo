@@ -22,7 +22,7 @@ export function Node({
   rotation,
 }: {
   node: NodeMesh;
-  onDrag?: (nodeId: number, x: number, y: number) => void;
+  onDrag?: (x: number, y: number) => void;
   position: [number, number, number];
   rotation?: [number, number, number];
 }) {
@@ -30,6 +30,7 @@ export function Node({
 
   return (
     <group
+      scale={5}
       position={position}
       rotation={rotation}
       onPointerDown={(e) => {
@@ -42,7 +43,12 @@ export function Node({
       onPointerMove={(e) => {
         if (isDragging) {
           e.stopPropagation();
-          onDrag?.(node.id, e.point.x, e.point.y);
+
+          /* 
+            onDrag?.(nodeId, e.point.x, e.point.y); => we don't need to pass the id here, we simplify the component API.
+            The `Node` component API focus solely on the position. 
+          */
+          onDrag?.(e.point.x, e.point.y);
         }
       }}
       onPointerUp={(e) => {

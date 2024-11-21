@@ -10,6 +10,7 @@ import {
   forceSimulation,
   Simulation,
 } from "d3-force";
+import { toPosition } from "../utils/toPosition";
 // import { drag } from "d3-drag"; // uses DOM. We're in canvas territory. So, we can't use this.
 // import { selectAll } from "d3-selection";
 
@@ -76,7 +77,7 @@ export function ForceGraph() {
   };
 
   return (
-    <group scale={0.01}>
+    <group position={toPosition({ positionIn: 500 })}>
       {graph?.links.map((link, idx) => <GraphLink key={idx} link={link} />)}
 
       {graph?.nodes.map((node) => (
@@ -84,7 +85,14 @@ export function ForceGraph() {
           key={node.id}
           node={node}
           position={[node.x ?? 0, node.y ?? 0, node.z ?? 0]}
-          onDrag={(nodeId, x, y) => updateNodePosition(nodeId, x, y)}
+          /* 
+            onDrag={(id, x, y) => updateNodePosition(nodeId, x, y)} => we can remove the id, since it's not coming from the child component anymore
+            onDrag={(x, y) => updateNodePosition(node.id, x, y)} => we can remove the id, since it's not coming from the child component anymore
+            x and y come from the child, but we pass forward the node.id from the parent to the update node function
+          */
+          onDrag={(x, y) => {
+            updateNodePosition(node.id, x, y);
+          }}
         />
       ))}
     </group>
