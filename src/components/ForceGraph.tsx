@@ -11,13 +11,16 @@ import {
   Simulation,
 } from "d3-force";
 import { toPosition } from "../utils/toPosition";
-// import { drag } from "d3-drag"; // uses DOM. We're in canvas territory. So, we can't use this.
-// import { selectAll } from "d3-selection";
 
 type GraphData = {
   nodes: NodeMesh[];
   links: LinkMesh[];
 };
+
+const DEPTH_GRAPH = 20;
+const LINK_DISTANCE = 1;
+const NODES_XY_ATTRACTION = 20; //-30 default. Positive value: attraction, negative: repulsion
+const NODES_Z_ATTRACTION = 10;
 
 /**
  * After different attempts with varied libraries to build a force-directed graph,`d3-force` was the most suitable for this project.
@@ -31,7 +34,7 @@ export function ForceGraph() {
     const nodes: NodeMesh[] = data.nodes.map((n) => ({
       ...n,
       tag_type: n.tag_type as TagEnum,
-      z: Math.random() * 1000,
+      z: Math.random() * DEPTH_GRAPH,
     }));
     const links: LinkMesh[] = data.links.map((l) => ({ ...l }));
 
@@ -40,18 +43,22 @@ export function ForceGraph() {
         "link",
         forceLink<NodeMesh, LinkMesh>(links)
           .id((d) => d.id)
-          .distance(50)
+          .distance(LINK_DISTANCE)
       )
-      .force("charge", forceManyBody().strength(-300))
+      .force("charge", forceManyBody().strength(NODES_XY_ATTRACTION))
       .force("center", forceCenter(0, 0))
-      .force("z", forceManyBody().strength(-10))
-      .on("tick", () => {
-        // if (graphRef.current) {
-        //   graphRef.current.nodes = nodes.map((n) => ({ ...n }));
-        //   graphRef.current.links = links.map((l) => ({ ...l }));
-        // }
-        setGraph({ nodes: [...nodes], links: [...links] });
-      });
+      .force("z", forceManyBody().strength(NODES_Z_ATTRACTION))
+      .alpha(1)
+      .alphaDecay(0);
+
+    // run 300 iteration to stabilize graph
+    for (let i = 0; i < 300; i++) {
+      simulation.tick();
+    }
+
+    simulation.stop();
+
+    setGraph({ nodes: [...nodes], links: [...links] });
 
     simulationRef.current = simulation;
 
@@ -60,24 +67,20 @@ export function ForceGraph() {
     };
   }, []);
 
-  const updateNodePosition = (nodeId: number, x: number, y: number) => {
-    if (!simulationRef.current) {
-      return;
-    }
+  function calculateRotation(node: NodeMesh): [number, number, number] {
+    const dx = -(node.x ?? 0); // Node pointing to [0,0,0]
+    const dy = -(node.y ?? 0);
+    const dz = -(node.z ?? 0);
 
-    // in d3-foce, the nodes property is a function that returns the array of nodes, not a property that holds the array directly
-    // we need to call .nodes()
-    const node = simulationRef.current.nodes().find((n) => n.id === nodeId);
+    // Calculate spherical angles
+    const theta = Math.atan2(dy, dz); // Rotation around X (up-down tilt)
+    const phi = Math.atan2(dx, dz); // Rotation around Y (left-right tilt)
 
-    if (node) {
-      node.fx = x;
-      node.fy = y;
-      simulationRef.current.alphaTarget(0.3).restart();
-    }
-  };
+    return [theta, phi, 0]; // Rotation for the node
+  }
 
   return (
-    <group position={toPosition({ positionIn: 500 })}>
+    <group position={toPosition({ positionIn: DEPTH_GRAPH + 3 })}>
       {graph?.links.map((link, idx) => <GraphLink key={idx} link={link} />)}
 
       {graph?.nodes.map((node) => (
@@ -85,14 +88,7 @@ export function ForceGraph() {
           key={node.id}
           node={node}
           position={[node.x ?? 0, node.y ?? 0, node.z ?? 0]}
-          /* 
-            onDrag={(id, x, y) => updateNodePosition(nodeId, x, y)} => we can remove the id, since it's not coming from the child component anymore
-            onDrag={(x, y) => updateNodePosition(node.id, x, y)} => we can remove the id, since it's not coming from the child component anymore
-            x and y come from the child, but we pass forward the node.id from the parent to the update node function
-          */
-          onDrag={(x, y) => {
-            updateNodePosition(node.id, x, y);
-          }}
+          rotation={calculateRotation(node)}
         />
       ))}
     </group>

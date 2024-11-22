@@ -14,6 +14,7 @@ export function GraphLink({ link }: { link: LinkMesh }) {
         [target?.x || 0, target?.y || 0, target?.z || 0],
       ]}
       color={getLinkColor(link.weight)}
+      lineWidth={1.4}
       opacity={0.3}
       transparent
     />
