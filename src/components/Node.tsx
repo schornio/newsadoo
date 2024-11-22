@@ -1,5 +1,4 @@
 import { Image, RoundedBox, Text } from "@react-three/drei";
-// import { useState } from "react";
 import { NodeMesh } from "../types";
 import { toSize } from "../utils/toSize";
 import { toGoldenRatio } from "../utils/toGoldenRatio";
@@ -7,7 +6,6 @@ import { toRotation } from "../utils/toRotation";
 import { toPosition } from "../utils/toPosition";
 import { useState } from "react";
 import { ThreeEvent } from "@react-three/fiber";
-import { textSizeVR } from "../constants/textSizeVR";
 import { useViewStore } from "../store/useViewStore";
 
 const CARD_DEPTH = 0.1;
@@ -22,15 +20,16 @@ export function Node({
   node,
   position,
   rotation,
-  onDrag,
+  isView = false,
+  onClick,
 }: {
   node: NodeMesh;
   position?: [number, number, number];
   rotation?: [number, number, number];
-  onDrag?: (x: number, y: number, z: number) => void;
+  isView?: boolean;
+  onClick?: () => void;
 }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
   // const viewMode = useViewStore((state) => state.viewMode);
   // const setViewMode = useViewStore((state) => state.setViewMode);
   const setCurrentNodeId = useViewStore((state) => state.setCurrentNodeId);
@@ -42,21 +41,12 @@ export function Node({
 
   function onPointerDown(e: ThreeEvent<PointerEvent>) {
     e.stopPropagation();
-    setIsDragging(true);
     setCurrentNodeId(node.id);
+    onClick?.();
   }
 
   function onPointerUp(e: ThreeEvent<PointerEvent>) {
     e.stopPropagation();
-    setIsDragging(false);
-  }
-
-  function onPointerMove(e: ThreeEvent<PointerEvent>) {
-    if (isDragging) {
-      e.stopPropagation();
-      const { x, y, z } = e.point;
-      onDrag?.(x, y, z);
-    }
   }
 
   return (
@@ -67,7 +57,6 @@ export function Node({
       onPointerUp={onPointerUp}
       onPointerEnter={(e) => onHover(e, "hover")}
       onPointerLeave={(e) => onHover(e, "unhover")}
-      onPointerMove={onPointerMove}
     >
       <RoundedBox
         args={toSize({
@@ -106,7 +95,6 @@ export function Node({
         color="black"
         anchorX="center"
         anchorY="middle"
-        // depthOffset={0.5}
       >
         {node.name}
       </Text>
