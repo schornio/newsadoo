@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import data from "../../assets/new_data.json";
-import { LinkMesh, NodeMesh, TagEnum } from "../types";
+import { LinkMesh, NodeMesh } from "../types";
 import { GraphLink } from "./Link";
 import { Node } from "./Node";
 import {
@@ -33,7 +33,6 @@ export function ForceGraph() {
   useEffect(() => {
     const nodes: NodeMesh[] = data.nodes.map((n) => ({
       ...n,
-      tag_type: n.tag_type as TagEnum,
       z: Math.random() * DEPTH_GRAPH,
     }));
     const links: LinkMesh[] = data.links.map((l) => ({ ...l }));
@@ -67,17 +66,18 @@ export function ForceGraph() {
     };
   }, []);
 
-  function calculateRotation(node: NodeMesh): [number, number, number] {
-    const dx = -(node.x ?? 0); // Node pointing to [0,0,0]
-    const dy = -(node.y ?? 0);
-    const dz = -(node.z ?? 0);
+  // to improve
+  // function calculateRotation(node: NodeMesh): [number, number, number] {
+  //   const dx = -(node.x ?? 0); // Node pointing to [0,0,0]
+  //   const dy = -(node.y ?? 0);
+  //   const dz = -(node.z ?? 0);
 
-    // Calculate spherical angles
-    const theta = Math.atan2(dy, dz); // Rotation around X (up-down tilt)
-    const phi = Math.atan2(dx, dz); // Rotation around Y (left-right tilt)
+  //   // Calculate spherical angles
+  //   const theta = Math.atan2(dy, dz); // Rotation around X (up-down tilt)
+  //   const phi = Math.atan2(dx, dz); // Rotation around Y (left-right tilt)
 
-    return [theta, phi, 0]; // Rotation for the node
-  }
+  //   return [theta, phi, 0]; // Rotation for the node
+  // }
 
   return (
     <group position={toPosition({ positionIn: DEPTH_GRAPH + 3 })}>
@@ -88,7 +88,7 @@ export function ForceGraph() {
           key={node.id}
           node={node}
           position={[node.x ?? 0, node.y ?? 0, node.z ?? 0]}
-          rotation={calculateRotation(node)}
+          // rotation={calculateRotation(node)}
         />
       ))}
     </group>

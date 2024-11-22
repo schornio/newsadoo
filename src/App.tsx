@@ -1,10 +1,14 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Text } from "@react-three/drei";
+import { Text } from "@react-three/drei";
 import { createXRStore, XR } from "@react-three/xr";
 import { ForceGraph } from "./components/ForceGraph";
 import { toPosition } from "./utils/toPosition";
 import { textSizeVR } from "./constants/textSizeVR";
 import { useViewStore } from "./store/useViewStore";
+import data from "../assets/new_data.json";
+import { Node } from "./components/Node";
+import { NodeMesh } from "./types";
+import { useState } from "react";
 
 const store = createXRStore({
   hand: {
@@ -16,9 +20,26 @@ const store = createXRStore({
 });
 
 export default function App() {
-  const viewMode = useViewStore((state) => state.viewMode);
-  const setViewMode = useViewStore((state) => state.setViewMode);
+  // const viewMode = useViewStore((state) => state.viewMode);
+  // const setViewMode = useViewStore((state) => state.setViewMode);
   const currentNodeId = useViewStore((state) => state.currentNodeId);
+  const currentNode: NodeMesh | undefined = data.nodes.find(
+    (n) => n.id === currentNodeId
+  );
+
+  const [currentNodePosition, setCurrentNodePosition] = useState({
+    x: 0,
+    y: 1,
+    z: -1,
+  });
+
+  function onDragNode(x: number, y: number, z: number) {
+    setCurrentNodePosition({
+      x,
+      y,
+      z,
+    });
+  }
 
   return (
     <div style={{ width: "100%", height: "100%", position: "relative" }}>
@@ -49,26 +70,6 @@ export default function App() {
             })}
           >
             <Text
-              position={toPosition({ positionIn: 1 })}
-              fontSize={textSizeVR.sm}
-            >
-              {viewMode === "graph" ? "Graph" : "Read mode"}
-            </Text>
-
-            <Text fontSize={textSizeVR.xs}>change visualization</Text>
-            <mesh
-              position={toPosition({
-                positionBottom: 0.2,
-              })}
-              onPointerEnter={() =>
-                setViewMode(viewMode === "graph" ? "read" : "graph")
-              }
-            >
-              <boxGeometry args={[0.1, 0.1, 0.1]} />
-              <meshBasicMaterial color="blue" />
-            </mesh>
-
-            <Text
               fontSize={textSizeVR.xs}
               position={toPosition({
                 positionBottom: 0.5,
@@ -78,12 +79,22 @@ export default function App() {
             </Text>
           </group>
 
-          <OrbitControls enableRotate enablePan />
-
           <ambientLight intensity={1} />
           <directionalLight position={[10, 10, 5]} intensity={1} />
 
           <ForceGraph />
+
+          {currentNode && (
+            <Node
+              node={currentNode}
+              position={[
+                currentNodePosition.x,
+                currentNodePosition.y,
+                currentNodePosition.z,
+              ]}
+              onDrag={onDragNode}
+            />
+          )}
         </XR>
       </Canvas>
     </div>

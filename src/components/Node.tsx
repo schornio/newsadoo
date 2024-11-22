@@ -11,7 +11,7 @@ import { textSizeVR } from "../constants/textSizeVR";
 import { useViewStore } from "../store/useViewStore";
 
 const CARD_DEPTH = 0.1;
-const CARD_HEIGHT = 1.5;
+const CARD_HEIGHT = 1;
 const LANDSCAPE_CARD = "portrait";
 const NOT_WORKING_IMAGE =
   "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png";
@@ -22,15 +22,17 @@ export function Node({
   node,
   position,
   rotation,
+  onDrag,
 }: {
   node: NodeMesh;
-  position: [number, number, number];
+  position?: [number, number, number];
   rotation?: [number, number, number];
+  onDrag?: (x: number, y: number, z: number) => void;
 }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
-  const viewMode = useViewStore((state) => state.viewMode);
-  const setViewMode = useViewStore((state) => state.setViewMode);
+  const [isDragging, setIsDragging] = useState(false);
+  // const viewMode = useViewStore((state) => state.viewMode);
+  // const setViewMode = useViewStore((state) => state.setViewMode);
   const setCurrentNodeId = useViewStore((state) => state.setCurrentNodeId);
 
   function onHover(e: ThreeEvent<PointerEvent>, type: "hover" | "unhover") {
@@ -38,36 +40,34 @@ export function Node({
     setIsHovered(type === "hover");
   }
 
-  function onClick(e: ThreeEvent<PointerEvent>, type: "click" | "unclick") {
+  function onPointerDown(e: ThreeEvent<PointerEvent>) {
     e.stopPropagation();
-    setIsClicked(type === "click");
+    setIsDragging(true);
+    setCurrentNodeId(node.id);
   }
 
-  function getNodeColor(isHovered: boolean, isClicked: boolean) {
-    let color = "white";
+  function onPointerUp(e: ThreeEvent<PointerEvent>) {
+    e.stopPropagation();
+    setIsDragging(false);
+  }
 
-    if (isHovered) {
-      color = "gray";
+  function onPointerMove(e: ThreeEvent<PointerEvent>) {
+    if (isDragging) {
+      e.stopPropagation();
+      const { x, y, z } = e.point;
+      onDrag?.(x, y, z);
     }
-
-    if (isClicked) {
-      color = "green";
-    }
-
-    return color;
   }
 
   return (
     <group
       position={position}
       rotation={rotation}
-      onPointerDown={(e) => {
-        onClick(e, isClicked ? "unclick" : "click");
-        setViewMode(viewMode === "graph" ? "read" : "graph");
-        setCurrentNodeId(node.id);
-      }}
+      onPointerDown={onPointerDown}
+      onPointerUp={onPointerUp}
       onPointerEnter={(e) => onHover(e, "hover")}
       onPointerLeave={(e) => onHover(e, "unhover")}
+      onPointerMove={onPointerMove}
     >
       <RoundedBox
         args={toSize({
@@ -81,7 +81,7 @@ export function Node({
           rotationZInRad: LANDSCAPE_CARD === "portrait" ? -Math.PI / 2 : 0,
         })}
       >
-        <meshBasicMaterial color={getNodeColor(isHovered, isClicked)} />
+        <meshBasicMaterial color={isHovered ? "gray" : "white"} />
       </RoundedBox>
 
       {node.image && (
@@ -90,18 +90,19 @@ export function Node({
             node.image === NOT_WORKING_IMAGE ? IMAGE_PLACEHOLDER : node.image
           }
           position={toPosition({
-            positionTop: 0.4,
+            positionTop: 0.2,
             positionOut: CARD_DEPTH,
           })}
+          scale={0.8}
         />
       )}
 
       <Text
         position={toPosition({
           positionOut: CARD_DEPTH,
-          positionBottom: 0.6,
+          positionBottom: 0.4,
         })}
-        fontSize={textSizeVR.sm}
+        fontSize={0.1}
         color="black"
         anchorX="center"
         anchorY="middle"

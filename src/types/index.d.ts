@@ -17,7 +17,7 @@ export interface NodeMesh extends SimulationNodeDatum {
   id: number;
   name: string;
   tag_timeline: string;
-  tag_type: TagEnum;
+  tag_type: string;
   val: number;
   level: number;
   image: string;
