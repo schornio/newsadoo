@@ -38,3 +38,22 @@ export function toPosition({
     positionOut - positionIn, // Z-axis
   ];
 }
+
+export function convertXYZtoPosition(
+  x: number,
+  y: number,
+  z: number
+): Position {
+  // +x = right -x = left
+  // +y = top -y = bottom
+  // +z = out -z = in
+
+  return {
+    positionRight: x > 0 ? x : 0,
+    positionLeft: x < 0 ? -x : 0,
+    positionTop: y > 0 ? y : 0,
+    positionBottom: y < 0 ? -y : 0,
+    positionOut: z > 0 ? z : 0,
+    positionIn: z < 0 ? -z : 0,
+  };
+}
