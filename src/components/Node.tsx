@@ -1,102 +1,69 @@
-import { Image, RoundedBox, Text } from "@react-three/drei";
-import { NodeMesh } from "../types";
-import { toSize } from "../utils/toSize";
-import { toGoldenRatio } from "../utils/toGoldenRatio";
-import { toRotation } from "../utils/toRotation";
-import { toPosition } from "../utils/toPosition";
-import { useState } from "react";
-import { ThreeEvent } from "@react-three/fiber";
-import { useViewStore } from "../store/useViewStore";
-
-const CARD_DEPTH = 0.1;
-const CARD_HEIGHT = 1;
-const LANDSCAPE_CARD = "portrait";
-const NOT_WORKING_IMAGE =
-  "https://media.newsadoo.com/mediahub/datasphere/vr/placeholder.png";
-const IMAGE_PLACEHOLDER =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg/100px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_%28cropped%29.jpg";
+import { RoundedBox, Sphere, Image, Text } from "@react-three/drei";
+import { Node as NodeType } from "./ForceGraph";
+import { useCallback, useRef } from "react";
+import { Group } from "three";
+import { ThreeEvent, useFrame } from "@react-three/fiber";
+import { Simulation } from "d3-force";
 
 export function Node({
   node,
-  position,
-  rotation,
-  isView = false,
   onClick,
+  selected,
+  simulation,
 }: {
-  node: NodeMesh;
-  position?: [number, number, number];
-  rotation?: [number, number, number];
-  isView?: boolean;
-  onClick?: () => void;
+  node: NodeType;
+  onClick: (node: NodeType) => void;
+  selected: boolean;
+  simulation: Simulation<NodeType, undefined>;
 }) {
-  const [isHovered, setIsHovered] = useState(false);
-  // const viewMode = useViewStore((state) => state.viewMode);
-  // const setViewMode = useViewStore((state) => state.setViewMode);
-  const setCurrentNodeId = useViewStore((state) => state.setCurrentNodeId);
+  const wrapperRef = useRef<Group>(null);
 
-  function onHover(e: ThreeEvent<PointerEvent>, type: "hover" | "unhover") {
-    e.stopPropagation();
-    setIsHovered(type === "hover");
-  }
+  useFrame(() => {
+    if (wrapperRef.current) {
+      wrapperRef.current.position.set(node.x ?? 0, node.y ?? 0, -50);
+    }
+  });
 
-  function onPointerDown(e: ThreeEvent<PointerEvent>) {
-    e.stopPropagation();
-    setCurrentNodeId(node.id);
-    onClick?.();
-  }
+  const onSphereClick = useCallback(() => {
+    onClick(node);
+  }, [node, onClick]);
 
-  function onPointerUp(e: ThreeEvent<PointerEvent>) {
-    e.stopPropagation();
-  }
+  const onPointerMove = useCallback(
+    (event: ThreeEvent<PointerEvent>) => {
+      if (selected) {
+        const cloned = event.point.clone();
+        const [x, y] = cloned.toArray();
+        node.fx = x;
+        node.fy = y;
+        simulation.alpha(0.1).restart();
+      }
+    },
+    [selected, node, simulation]
+  );
 
   return (
-    <group
-      position={position}
-      rotation={rotation}
-      onPointerDown={onPointerDown}
-      onPointerUp={onPointerUp}
-      onPointerEnter={(e) => onHover(e, "hover")}
-      onPointerLeave={(e) => onHover(e, "unhover")}
-    >
-      <RoundedBox
-        args={toSize({
-          sizeDepth: CARD_DEPTH,
-          sizeHeight: CARD_HEIGHT,
-          sizeWidth: toGoldenRatio({ height: CARD_HEIGHT }).goldenWidth,
-        })}
-        radius={0.1}
-        smoothness={4}
-        rotation={toRotation({
-          rotationZInRad: LANDSCAPE_CARD === "portrait" ? -Math.PI / 2 : 0,
-        })}
+    <group ref={wrapperRef}>
+      <Sphere
+        args={[5, 32, 32]}
+        key={node.data.id}
+        onClick={onSphereClick}
+        onPointerMove={onPointerMove}
       >
-        <meshBasicMaterial color={isHovered ? "gray" : "white"} />
-      </RoundedBox>
-
-      {node.image && (
-        <Image
-          url={
-            node.image === NOT_WORKING_IMAGE ? IMAGE_PLACEHOLDER : node.image
-          }
-          position={toPosition({
-            positionTop: 0.2,
-            positionOut: CARD_DEPTH,
-          })}
-          scale={0.8}
+        <meshStandardMaterial
+          color="yellow"
+          transparent
+          opacity={selected ? 0.7 : 0}
+          depthWrite={false}
         />
-      )}
-
-      <Text
-        position={toPosition({
-          positionOut: CARD_DEPTH,
-          positionBottom: 0.4,
-        })}
-        fontSize={0.1}
-        color="black"
-        anchorX="center"
-        anchorY="middle"
-      >
-        {node.name}
+      </Sphere>
+      <RoundedBox args={[6, 8, 1]} radius={0.3}>
+        <meshStandardMaterial color="white" />
+      </RoundedBox>
+      {node.data.image ? (
+        <Image position={[0, 1, 0.6]} scale={4.5} url={node.data.image} />
+      ) : undefined}
+      <Text position={[0, -2, 0.6]} color="black" fontSize={0.5}>
+        {node.data.name}
       </Text>
     </group>
   );

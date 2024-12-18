@@ -1,8 +1,14 @@
 import { SimulationLinkDatum, SimulationNodeDatum } from "d3-force";
 
+export type Position = {
+  x: number;
+  y: number;
+  z: number;
+};
+
 export interface LinkMesh extends SimulationLinkDatum {
-  source: NodeMesh | number;
-  target: NodeMesh | number;
+  source: Position;
+  target: Position;
   weight: number;
   // added after d3 simulation
   id?: string | number;

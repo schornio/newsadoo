@@ -1,96 +1,105 @@
-import { useEffect, useState, useRef } from "react";
 import data from "../../assets/new_data.json";
-import { LinkMesh, NodeMesh } from "../types";
-import { GraphLink } from "./Link";
-import { Node } from "./Node";
 import {
-  forceCenter,
   forceLink,
   forceManyBody,
   forceSimulation,
-  Simulation,
+  SimulationLinkDatum,
+  SimulationNodeDatum,
 } from "d3-force";
-import { toPosition } from "../utils/toPosition";
 
-type GraphData = {
-  nodes: NodeMesh[];
-  links: LinkMesh[];
+import { useFrame } from "@react-three/fiber";
+import { useCallback, useMemo, useState } from "react";
+import { Link } from "./Link";
+import { Node as NodeComponent } from "./Node";
+import { NodeDetail } from "./NodeDetail";
+
+type NodeData = (typeof data.nodes)[number] & {
+  zIndex: number;
 };
 
-const DEPTH_GRAPH = 20;
-const LINK_DISTANCE = 1;
-const NODES_XY_ATTRACTION = 20; //-30 default. Positive value: attraction, negative: repulsion
-const NODES_Z_ATTRACTION = 10;
+function toLinkKey(link: { source: Node; target: Node; index: number }) {
+  return `${link.source.data.id}-${link.target.data.id}`;
+}
 
-/**
- * After different attempts with varied libraries to build a force-directed graph,`d3-force` was the most suitable for this project.
- * `three-forcegraph`: relies on three.js rendering, what causes conflicts with events from R3F
- */
+export type Node = SimulationNodeDatum & {
+  data: NodeData;
+};
+
 export function ForceGraph() {
-  const [graph, setGraph] = useState<GraphData | null>(null);
-  const simulationRef = useRef<Simulation<NodeMesh, LinkMesh> | null>(null);
+  const [selectedNodeId, setSelectedNodeId] = useState<number | null>(null);
 
-  useEffect(() => {
-    const nodes: NodeMesh[] = data.nodes.map((n) => ({
-      ...n,
-      z: Math.random() * DEPTH_GRAPH,
+  const { links, nodes, simulation } = useMemo(() => {
+    const mutableNodes: Node[] = data.nodes.map((data) => ({
+      data: { ...data, zIndex: -50 },
     }));
-    const links: LinkMesh[] = data.links.map((l) => ({ ...l }));
+    const mutableLinks: SimulationLinkDatum<Node>[] = data.links.map((l) => ({
+      ...l,
+    }));
 
-    const simulation = forceSimulation(nodes)
+    const simulation = forceSimulation(mutableNodes)
+      .force("charge", forceManyBody())
       .force(
         "link",
-        forceLink<NodeMesh, LinkMesh>(links)
-          .id((d) => d.id)
-          .distance(LINK_DISTANCE)
-      )
-      .force("charge", forceManyBody().strength(NODES_XY_ATTRACTION))
-      .force("center", forceCenter(0, 0))
-      .force("z", forceManyBody().strength(NODES_Z_ATTRACTION))
-      .alpha(1)
-      .alphaDecay(0);
+        forceLink<Node, SimulationLinkDatum<Node>>(mutableLinks).id(
+          (link) => link.data.id
+        )
+      );
 
-    // run 300 iteration to stabilize graph
-    for (let i = 0; i < 300; i++) {
-      simulation.tick();
-    }
+    simulation.tick();
 
-    simulation.stop();
-
-    setGraph({ nodes: [...nodes], links: [...links] });
-
-    simulationRef.current = simulation;
-
-    return () => {
-      simulation.stop();
+    return {
+      simulation,
+      nodes: mutableNodes,
+      links: mutableLinks as {
+        source: Node;
+        target: Node;
+        index: number;
+      }[],
     };
   }, []);
 
-  // to improve
-  // function calculateRotation(node: NodeMesh): [number, number, number] {
-  //   const dx = -(node.x ?? 0); // Node pointing to [0,0,0]
-  //   const dy = -(node.y ?? 0);
-  //   const dz = -(node.z ?? 0);
+  useFrame(() => {
+    simulation.tick();
+  });
 
-  //   // Calculate spherical angles
-  //   const theta = Math.atan2(dy, dz); // Rotation around X (up-down tilt)
-  //   const phi = Math.atan2(dx, dz); // Rotation around Y (left-right tilt)
+  const uniqueLinkKeys = new Set<string>();
+  const uniqueLinks = links.filter((link) => {
+    const key = toLinkKey(link);
+    if (uniqueLinkKeys.has(key)) {
+      return false;
+    }
+    uniqueLinkKeys.add(key);
+    return true;
+  });
 
-  //   return [theta, phi, 0]; // Rotation for the node
-  // }
+  const onNodeClick = useCallback((node: Node) => {
+    setSelectedNodeId((prev) => (prev === node.data.id ? null : node.data.id));
+  }, []);
+
+  const selectedNode = nodes.find((node) => node.data.id === selectedNodeId);
 
   return (
-    <group position={toPosition({ positionIn: DEPTH_GRAPH + 3 })}>
-      {graph?.links.map((link, idx) => <GraphLink key={idx} link={link} />)}
-
-      {graph?.nodes.map((node) => (
-        <Node
-          key={node.id}
+    <>
+      {nodes.map((node) => (
+        <NodeComponent
+          key={node.data.id}
           node={node}
-          position={[node.x ?? 0, node.y ?? 0, node.z ?? 0]}
-          // rotation={calculateRotation(node)}
+          onClick={onNodeClick}
+          selected={selectedNodeId === node.data.id}
+          simulation={simulation}
         />
       ))}
-    </group>
+
+      {uniqueLinks.map((link) => (
+        <Link
+          key={`${link.source.data.id}-${link.target.data.id}`}
+          link={link}
+        />
+      ))}
+
+      {selectedNode ? (
+        <NodeDetail node={selectedNode} position={[-10, 0, -1]} />
+      ) : undefined}
+    </>
   );
 }

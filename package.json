@@ -15,7 +15,7 @@
     "@react-three/drei": "^9.114.3",
     "@react-three/fiber": "^8.17.10",
     "@react-three/uikit": "^0.8.4",
-    "@react-three/xr": "^6.2.13",
+    "@react-three/xr": "^6.4.12",
     "3d-force-graph": "^1.73.4",
     "d3-drag": "^3.0.0",
     "d3-force": "^3.0.0",
