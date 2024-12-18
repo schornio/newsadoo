@@ -3,7 +3,24 @@ import { createXRStore, XR } from "@react-three/xr";
 import { ForceGraph } from "./components/ForceGraph";
 import { Cylinder, Sky } from "@react-three/drei";
 
-const store = createXRStore({});
+const store = createXRStore({
+  controller: {
+    rayPointer: {
+      rayModel: {
+        color: "yellow",
+        maxLength: 100,
+      },
+    },
+  },
+  hand: {
+    rayPointer: {
+      rayModel: {
+        color: "yellow",
+        maxLength: 100,
+      },
+    },
+  },
+});
 
 export default function App() {
   return (
